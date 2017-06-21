@@ -1,0 +1,8 @@
+        nodeID [color="colorNode",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    $$$$
+                </TABLE>>
+                ];

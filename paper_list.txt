@@ -1,0 +1,42 @@
+Convolutional Neural Networks for Sentence Classification
+Deep Autoencoder Topic Model for Short Texts
+Exploring Convolutional and Recurrent Neural Networks in Sequential Labelling for Dialogue Topic Tracking
+Distributed Representations of Sentences and Documents
+Dependency-based Convolutional Neural Networks for Sentence Embedding
+Multi-Perspective Sentence Similarity Modeling with Convolutional Neural Networks
+A Convolutional Neural Network for Modelling Sentences
+FINE-GRAINED ANALYSIS OF SENTENCE EMBEDDINGS USING AUXILIARY PREDICTION TASKS
+A C-LSTM Neural Network for Text Classificatio
+Combine HowNet lexicon to train phrase recursive autoencoder for sentence-level sentiment analysis
+A Deep Architecture for Semantic Matching with Multiple Positional Sentence Representations
+Siamese CBOW: Optimizing Word Embeddings for Sentence Representations
+Learning text representation using recurrent convolutional neural network with highway layers
+ABCNN: Attention-Based Convolutional Neural Network for Modeling Sentence Pairs
+Learning Natural Language Inference using Bidirectional LSTM model and Inner-Attention
+A Structured Self-attentive Sentence Embedding
+Learning Semantic Similarity for Very Short Texts
+Discourse-Based Objectives for Fast Unsupervised Sentence Representation Learning
+Deep sentence embedding using long short-term memory networks: analysis and application to information retrieval
+Learning distributed representations of sentences from unlabelled data
+Skip-thought vectors
+Semi-supervised recursive autoencoders for predicting sentiment distributions
+Recursive deep models for semantic compositionality over a sentiment treebank.
+Empirical evaluation of gated recurrent neural networks on sequence modeling
+Deep convolutional neural networks for sentiment analysis of short texts
+Improved representation learning for question answer matching
+Sequential short-text classification with recurrent and con- volutional neural networks
+A batch-normalized recurrent network for sentiment classification
+language inference using bidirectional LSTM model and inner-attention
+Long short-term memory-networks for machine reading
+A decomposable attention model for natural language inference
+Bilateral Multi-Perspective Matching for Natural Language Sentences
+Recurrent Additive Networks
+Convolutional neural network architectures for matching natural language sentences
+Multi- grancnn: An architecture for general matching of text chunks on multiple levels of granularity
+Sentence Similarity Learning by Lexical Decomposition and Composition
+Learning to understand phrases by embedding the dictionary
+Unsupervised Learning of Sentence Representations using Convolutional Neural Networks
+Unsupervised pretraining for sequence to se- quence learning
+Sentence ordering using recurrent neural networks
+Distributed Representations of Words and Phrases and their Compositionality
+Composition in Distributional Models of Semantics

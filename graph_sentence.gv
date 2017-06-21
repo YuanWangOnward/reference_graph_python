@@ -1,0 +1,100 @@
+digraph G {
+    edge [comment="Wildcard node added automatic in EG."];
+    node [comment="Wildcard node added automatic in EG.",
+        fontname="sans-serif"];
+        size ="8, 2000";
+        ratio = "compress"
+        splines=ortho;
+        ranksep=0.5;
+    {        node[shape = plaintext fontsize = 28];        1990 ->        1997 ->        1998 ->        1999 ->        2000 ->        2001 ->        2003 ->        2004 ->        2007 ->        2008 ->        2009 ->        2011 ->        2012 ->        2013 ->        2014 ->        2015 ->        2016 ->        2017    }
+    {rank = same;    1990;    Deerwester1990IndexingByLatent;    }
+    {rank = same;    1997;    Hearst1997TexttilingSegmentingText;    }
+    {rank = same;    1998;    Heinonen1998OptimalMultiparagraphText;    Malioutov1998MinimumCutModel;    }
+    {rank = same;    1999;    Hofmann1999ProbabilisticLatentSemantic;    }
+    {rank = same;    2000;    Tenenbaum2000AGlobalGeometric;    }
+    {rank = same;    2001;    Choi2001LatentSemanticAnalysis;    }
+    {rank = same;    2003;    Blei2003LatentDirichletAllocation;    Belkin2003LaplacianEigenmapsFor;    }
+    {rank = same;    2004;    He2004LocalityPreservingProjections;    Stokes2004SelectALexical;    Fragkou2004ADynamicProgramming;    }
+    {rank = same;    2007;    Chan2007ModelingTheStatistical;    Sitbon2007TopicSegmentationUsing;    }
+    {rank = same;    2008;    Arora2008LatentDirichletAllocation;    Eisenstein2008BayesianUnsupervisedTopic;    Sherman2008UsingHiddenMarkov;    Yang2008SubwordLatentSemantic;    Xie2008MultiscaleTexttilingFor;    Yang2008SubwordLexicalChaining;    Sun2008TextSegmentationWith;    }
+    {rank = same;    2009;    Cai2009ProbabilisticDyadicData;    Lo2009AutomaticStorySegmentation;    }
+    {rank = same;    2011;    Lu2011BroadcastNewsStory;    Lu2011ProbabilisticLatentSemantic;    Collobert2011NaturalLanguageProcessing;    Xie2011OnTheEffectiveness;    }
+    {rank = same;    2012;    Riedl2012TextSegmentationWith;    Chien2012TopicbasedHierarchicalSegmentation;    Huh2012DiscriminativeTopicModeling;    Riedl2012TopicTilingAText;    Xie2012LaplacianEigenmapsFor;    }
+    {rank = same;    2013;    Lu2013BroadcastNewsStory;    }
+    {rank = same;    2014;    Kim2014ConvolutionalNeuralNetworks;    Kalchbrenner2014AConvolutionalNeural;    Le2014DistributedRepresentationsOf;    Yang2014UnsupervisedBroadcastNews;    Bouchekif2014IntracontentTermWeighting;    }
+    {rank = same;    2015;    Kumar2015DeepAutoencoderTopic;    Ma2015DependencybasedConvolutionalNeural;    He2015MultiperspectiveSentenceSimilarity;    Claveau2015TopicSegmentationOf;    Donahue2015LongtermRecurrentConvolutional;    }
+    {rank = same;    2016;    Kim2016ExploringConvolutionalAnd;    Le2016DistributedRepresentationsOf;    Yu2016ADNNHMMApproach;    Chifu2016SegChainTowards;    Lai2016AutomaticParagraphSegmentation;    Chifu2016SegChainW2VTowardsA;    }
+    {rank = same;    2017;    Chen2017ModelingLatentTopics;    Yu2017AHybridNeural;    }
+    Arora2008LatentDirichletAllocation -> Chen2017ModelingLatentTopics[ weight=2, penwidth=2, color="#855D5D"]    Belkin2003LaplacianEigenmapsFor -> Xie2012LaplacianEigenmapsFor[ weight=2, penwidth=2, color="#855D5D"]    Blei2003LatentDirichletAllocation -> Yu2017AHybridNeural[ weight=2, penwidth=2, color="#855D5D"]    Bouchekif2014IntracontentTermWeighting -> Yu2017AHybridNeural[ weight=2, penwidth=2, color="#855D5D"]    Cai2009ProbabilisticDyadicData -> Chen2017ModelingLatentTopics[ weight=2, penwidth=2, color="#855D5D"]    Chien2012TopicbasedHierarchicalSegmentation -> Chen2017ModelingLatentTopics[ weight=2, penwidth=2, color="#855D5D"]    Chifu2016SegChainTowards -> Chifu2016SegChainW2VTowardsA[ weight=4, penwidth=3, color="#855D5D"]    Choi2001LatentSemanticAnalysis -> Chen2017ModelingLatentTopics[ weight=2, penwidth=2, color="#855D5D"]    Choi2001LatentSemanticAnalysis -> Chen2017ModelingLatentTopics[ weight=2, penwidth=2, color="#855D5D"]    Deerwester1990IndexingByLatent -> Chen2017ModelingLatentTopics[ weight=2, penwidth=2, color="#855D5D"]    Eisenstein2008BayesianUnsupervisedTopic -> Yu2017AHybridNeural[ weight=2, penwidth=2, color="#855D5D"]    He2004LocalityPreservingProjections -> Chen2017ModelingLatentTopics[ weight=2, penwidth=2, color="#855D5D"]    Hearst1997TexttilingSegmentingText -> Yu2017AHybridNeural[ weight=2, penwidth=2, color="#855D5D"]    Hofmann1999ProbabilisticLatentSemantic -> Chen2017ModelingLatentTopics[ weight=2, penwidth=2, color="#855D5D"]    Hofmann1999ProbabilisticLatentSemantic -> Yu2017AHybridNeural[ weight=2, penwidth=2, color="#855D5D"]    Huh2012DiscriminativeTopicModeling -> Chen2017ModelingLatentTopics[ weight=2, penwidth=2, color="#855D5D"]    Kumar2015DeepAutoencoderTopic -> Yu2017AHybridNeural[ weight=2, penwidth=2, color="#855D5D"]    Lu2011BroadcastNewsStory -> Yu2017AHybridNeural[ weight=2, penwidth=2, color="#855D5D"]    Lu2011ProbabilisticLatentSemantic -> Chen2017ModelingLatentTopics[ weight=2, penwidth=2, color="#855D5D"]    Lu2011ProbabilisticLatentSemantic -> Yu2017AHybridNeural[ weight=2, penwidth=2, color="#855D5D"]    Lu2013BroadcastNewsStory -> Chen2017ModelingLatentTopics[ weight=2, penwidth=2, color="#855D5D"]    Riedl2012TextSegmentationWith -> Chen2017ModelingLatentTopics[ weight=2, penwidth=2, color="#855D5D"]    Riedl2012TopicTilingAText -> Chen2017ModelingLatentTopics[ weight=2, penwidth=2, color="#855D5D"]    Sherman2008UsingHiddenMarkov -> Yu2017AHybridNeural[ weight=2, penwidth=2, color="#855D5D"]    Sun2008TextSegmentationWith -> Chen2017ModelingLatentTopics[ weight=2, penwidth=2, color="#855D5D"]    Tenenbaum2000AGlobalGeometric -> Chen2017ModelingLatentTopics[ weight=2, penwidth=2, color="#855D5D"]    Xie2011OnTheEffectiveness -> Yu2017AHybridNeural[ weight=2, penwidth=2, color="#855D5D"]    Xie2012LaplacianEigenmapsFor -> Chen2017ModelingLatentTopics[ weight=2, penwidth=2, color="#855D5D"]    Xie2012LaplacianEigenmapsFor -> Yu2017AHybridNeural[ weight=2, penwidth=2, color="#855D5D"]    Yang2008SubwordLatentSemantic -> Chen2017ModelingLatentTopics[ weight=2, penwidth=2, color="#855D5D"]    Yang2014UnsupervisedBroadcastNews -> Yu2017AHybridNeural[ weight=2, penwidth=2, color="#855D5D"]    Yu2016ADNNHMMApproach -> Yu2017AHybridNeural[ weight=4, penwidth=3, color="#855D5D"]    Hearst1997TexttilingSegmentingText -> Chifu2016SegChainTowards[ weight=2, penwidth=2, color="#855D5D"]    Sitbon2007TopicSegmentationUsing -> Chifu2016SegChainTowards[ weight=2, penwidth=2, color="#855D5D"]    Claveau2015TopicSegmentationOf -> Chifu2016SegChainTowards[ weight=2, penwidth=2, color="#855D5D"]    Claveau2015TopicSegmentationOf -> Chifu2016SegChainW2VTowardsA[ weight=2, penwidth=2, color="#855D5D"]    Hearst1997TexttilingSegmentingText -> Chifu2016SegChainW2VTowardsA[ weight=2, penwidth=2, color="#855D5D"]    Hearst1997TexttilingSegmentingText -> Lai2016AutomaticParagraphSegmentation[ weight=2, penwidth=2, color="#855D5D"]    Riedl2012TopicTilingAText -> Lai2016AutomaticParagraphSegmentation[ weight=2, penwidth=2, color="#855D5D"]    Xie2012LaplacianEigenmapsFor -> Lai2016AutomaticParagraphSegmentation[ weight=2, penwidth=2, color="#855D5D"]    Eisenstein2008BayesianUnsupervisedTopic -> Lai2016AutomaticParagraphSegmentation[ weight=2, penwidth=2, color="#855D5D"]    Hearst1997TexttilingSegmentingText -> Yu2016ADNNHMMApproach[ weight=2, penwidth=2, color="#855D5D"]    Xie2011OnTheEffectiveness -> Yu2016ADNNHMMApproach[ weight=2, penwidth=2, color="#855D5D"]    Bouchekif2014IntracontentTermWeighting -> Yu2016ADNNHMMApproach[ weight=2, penwidth=2, color="#855D5D"]    Malioutov1998MinimumCutModel -> Yu2016ADNNHMMApproach[ weight=2, penwidth=2, color="#855D5D"]    Fragkou2004ADynamicProgramming -> Yu2016ADNNHMMApproach[ weight=2, penwidth=2, color="#855D5D"]    Heinonen1998OptimalMultiparagraphText -> Yu2016ADNNHMMApproach[ weight=2, penwidth=2, color="#855D5D"]    Xie2012LaplacianEigenmapsFor -> Yu2016ADNNHMMApproach[ weight=2, penwidth=2, color="#855D5D"]    Lu2011BroadcastNewsStory -> Yu2016ADNNHMMApproach[ weight=2, penwidth=2, color="#855D5D"]    Eisenstein2008BayesianUnsupervisedTopic -> Yu2016ADNNHMMApproach[ weight=2, penwidth=2, color="#855D5D"]    Yang2014UnsupervisedBroadcastNews -> Yu2016ADNNHMMApproach[ weight=2, penwidth=2, color="#855D5D"]    Hofmann1999ProbabilisticLatentSemantic -> Yu2016ADNNHMMApproach[ weight=2, penwidth=2, color="#855D5D"]    Blei2003LatentDirichletAllocation -> Yu2016ADNNHMMApproach[ weight=2, penwidth=2, color="#855D5D"]    Lu2011BroadcastNewsStory -> Yu2016ADNNHMMApproach[ weight=2, penwidth=2, color="#855D5D"]    Yang2008SubwordLatentSemantic -> Yu2016ADNNHMMApproach[ weight=2, penwidth=2, color="#855D5D"]    Lu2013BroadcastNewsStory -> Yu2016ADNNHMMApproach[ weight=2, penwidth=2, color="#855D5D"]    Sherman2008UsingHiddenMarkov -> Yu2016ADNNHMMApproach[ weight=2, penwidth=2, color="#855D5D"]    Hearst1997TexttilingSegmentingText -> Claveau2015TopicSegmentationOf[ weight=2, penwidth=2, color="#855D5D"]    Hearst1997TexttilingSegmentingText -> Xie2012LaplacianEigenmapsFor[ weight=2, penwidth=2, color="#855D5D"]    Stokes2004SelectALexical -> Xie2012LaplacianEigenmapsFor[ weight=2, penwidth=2, color="#855D5D"]    Chan2007ModelingTheStatistical -> Xie2012LaplacianEigenmapsFor[ weight=2, penwidth=2, color="#855D5D"]    Xie2008MultiscaleTexttilingFor -> Xie2012LaplacianEigenmapsFor[ weight=2, penwidth=2, color="#855D5D"]    Lo2009AutomaticStorySegmentation -> Xie2012LaplacianEigenmapsFor[ weight=2, penwidth=2, color="#855D5D"]    Malioutov1998MinimumCutModel -> Xie2012LaplacianEigenmapsFor[ weight=2, penwidth=2, color="#855D5D"]    Fragkou2004ADynamicProgramming -> Xie2012LaplacianEigenmapsFor[ weight=2, penwidth=2, color="#855D5D"]    Yang2008SubwordLatentSemantic -> Xie2012LaplacianEigenmapsFor[ weight=2, penwidth=2, color="#855D5D"]    Yang2008SubwordLexicalChaining -> Xie2012LaplacianEigenmapsFor[ weight=2, penwidth=2, color="#855D5D"]    Le2014DistributedRepresentationsOf -> Kim2016ExploringConvolutionalAnd[ weight=4, penwidth=3, color="#855D5D"]    Collobert2011NaturalLanguageProcessing -> Kim2016ExploringConvolutionalAnd[ weight=4, penwidth=3, color="#855D5D"]    Kim2014ConvolutionalNeuralNetworks -> Kim2016ExploringConvolutionalAnd[ weight=4, penwidth=3, color="#855D5D"]    Donahue2015LongtermRecurrentConvolutional -> Kim2016ExploringConvolutionalAnd[ weight=4, penwidth=3, color="#855D5D"]        Kim2014ConvolutionalNeuralNetworks [color="#855D5D",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#9B2D1F"><FONT  POINT-SIZE="20" COLOR="#FFFFFF">Kim2014</FONT></TD></TR>
+ <TR><TD COLSPAN="2" BGCOLOR="#EFE7E7"><FONT COLOR="#000000">Convolutional Neural Networks <BR/> for Sentence Classificatio <BR/></FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Kumar2015DeepAutoencoderTopic [color="#855D5D",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#9B2D1F"><FONT  POINT-SIZE="20" COLOR="#FFFFFF">Kumar2015</FONT></TD></TR>
+ <TR><TD COLSPAN="2" BGCOLOR="#EFE7E7"><FONT COLOR="#000000">Deep Autoencoder Topic Model <BR/> for Short Texts</FONT></TD></TR>
+ <TR><TD COLSPAN="2">Deep Autoencoder Topic Model <BR/> (DATM) <BR/> The DATM is trained in two steps: <BR/> i) greedy layer- wise pre-training <BR/> as Sparse & Selective Restricted <BR/> Boltzmann Machines (RBMs) and <BR/> ii) parameter fine-tuning with <BR/> back-propagation. When benchmarked <BR/> with the topic coherence metric, <BR/> the DATM outperformed Latent <BR/> Semantic Analysis and Latent <BR/> Dirichlet Allocation.</TD></TR>
+ 
+                </TABLE>>
+                ];
+        Kim2016ExploringConvolutionalAnd [color="#855D5D",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#9B2D1F"><FONT  POINT-SIZE="20" COLOR="#FFFFFF">Kim2016</FONT></TD></TR>
+ <TR><TD COLSPAN="2" BGCOLOR="#EFE7E7"><FONT COLOR="#000000">Exploring Convolutional and <BR/> Recurrent Neural Networks in <BR/> Sequential Labelling for Dialogue <BR/> Topic Tracking</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Le2016DistributedRepresentationsOf [color="#855D5D",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#9B2D1F"><FONT  POINT-SIZE="20" COLOR="#FFFFFF">Le2016</FONT></TD></TR>
+ <TR><TD COLSPAN="2" BGCOLOR="#EFE7E7"><FONT COLOR="#000000">Distributed Representations <BR/> of Sentences and Documents</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Ma2015DependencybasedConvolutionalNeural [color="#855D5D",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#9B2D1F"><FONT  POINT-SIZE="20" COLOR="#FFFFFF">Ma2015</FONT></TD></TR>
+ <TR><TD COLSPAN="2" BGCOLOR="#EFE7E7"><FONT COLOR="#000000">Dependency-based Convolutional <BR/> Neural Networks for Sentence <BR/> Embedding</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        He2015MultiperspectiveSentenceSimilarity [color="#855D5D",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#9B2D1F"><FONT  POINT-SIZE="20" COLOR="#FFFFFF">He2015</FONT></TD></TR>
+ <TR><TD COLSPAN="2" BGCOLOR="#EFE7E7"><FONT COLOR="#000000">Multi-Perspective Sentence <BR/> Similarity Modeling with Convolutional <BR/> Neural Networks</FONT></TD></TR>
+ <TR><TD COLSPAN="2">Sentence Similarity</TD></TR>
+ 
+                </TABLE>>
+                ];
+        Kalchbrenner2014AConvolutionalNeural [color="#855D5D",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#9B2D1F"><FONT  POINT-SIZE="20" COLOR="#FFFFFF">Kalchbrenner2014</FONT></TD></TR>
+ <TR><TD COLSPAN="2" BGCOLOR="#EFE7E7"><FONT COLOR="#000000">A Convolutional Neural Network <BR/> for Modelling Sentences</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+}
