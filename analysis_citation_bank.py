@@ -13,8 +13,10 @@ import pickle
 import functools
 
 # global setting
-PROJECT_PATH = "/home/ywang/PycharmProjects/reference_graph_python"
-RESEARCH_PATH = "/home/ywang/Desktop/research"
+# PROJECT_PATH = "/home/ywang/PycharmProjects/reference_graph_python"
+# RESEARCH_PATH = "/home/ywang/Desktop/research"
+PROJECT_PATH = "/Users/yuanwang/Google_Drive/projects/Gits/reference_graph_python"
+RESEARCH_PATH = "/Users/yuanwang/Google_Drive/job/2017ATT/research"
 GV_PATH = PROJECT_PATH + "/graph.gv"
 SEED_RELATION_PATH = RESEARCH_PATH + "/relationship_sentence.csv"
 SEED_XLSX_PATH = RESEARCH_PATH + "/reference_graph_sentence.xlsx"

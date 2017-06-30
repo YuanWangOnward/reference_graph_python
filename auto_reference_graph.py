@@ -248,7 +248,7 @@ class AutoReferenceGraph:
             f.write('    node [comment="Wildcard node added automatic in EG.",\n')
             f.write('        fontname="sans-serif"\n')
             f.write('        fontsize=' + str(self.minimal_font_size) + '];\n')
-            f.write('        size ="10, 20";\n')
+            f.write('        size ="18, 6";\n')
             f.write('        ratio = "compress"\n')
             # f.write('        rankdir = LR;\n')
             f.write('        splines=ortho;\n')
