@@ -8,6 +8,8 @@ import subprocess
 from openpyxl import load_workbook
 import os
 import glob
+import colorsys
+
 
 class AutoReferenceGraph:
     def __init__(self):
@@ -19,11 +21,11 @@ class AutoReferenceGraph:
                            'Cites': '[ weight=10, penwidth=2, color="#855D5D"]'}
         """
         self.color = {  # 'node': "#855D5D",
-                        'node': "#595959",
-                      'label_font': "#FFFFFF", 'label': "#00B0E9",
-                      'content_font': "#000000", 'content': "#D0E7F8",
-                      'label_emphasized': "#9B2D1F", 'content_emphasized': "#EFE7E7",
-                      'label_review': "#A28E6A"}
+            'node': "#BFBFBF",
+            'label_font': "#FFFFFF", 'label': "#00B0E9",
+            'content_font': "#000000", 'content': "#D0E7F8",
+            'label_emphasized': "#9B2D1F", 'content_emphasized': "#EFE7E7",
+            'label_review': "#A28E6A"}
 
         self.edge_style = {'Leads_to': '[ weight=4, penwidth=3, color="#BFBFBF"]',
                            'Cites': '[ weight=10, penwidth=2, color="#BFBFBF"]'}
@@ -156,31 +158,39 @@ class AutoReferenceGraph:
                               + self.content_wrapper(str(values[list(items).index("Note")])) + '</TD></TR>\n ' + "$$$$")
         '''
 
-
         tmp = tmp.replace("$$$$", '')
         # tmp = tmp.replace("colorNode", self.color['node'])
         tmp = tmp.replace("colorLabelFont", self.color['label_font'])
         if "Citation" in items:
-            dark = np.array([float(int(self.color['label'][1:3], 16)),
-                             float(int(self.color['label'][3:5], 16)),
-                             float(int(self.color['label'][5:7], 16))])
-            shallow = np.array([float(int(self.color['content'][1:3], 16)),
-                                float(int(self.color['content'][3:5], 16)),
-                                float(int(self.color['content'][5:7], 16))])
+            color_high_rgb = np.array([float(int(self.color['label'][1:3], 16)),
+                                       float(int(self.color['label'][3:5], 16)),
+                                       float(int(self.color['label'][5:7], 16))])
+
+            # convert from RGB to HSV
+            color_high_hsv = colorsys.rgb_to_hsv(color_high_rgb[0],
+                                                 color_high_rgb[1],
+                                                 color_high_rgb[2])
+
+            # modified s and v values according to citation count
             citation = str(int(values[list(items).index("Citation")]))
             if citation.isdigit():
                 citation = float(citation)
             else:
                 citation = 0.
-            color_temp = dark + (64. - citation) / 64. * np.linalg.norm(shallow - dark)
-            color_temp = np.minimum(color_temp, shallow)
-            color_temp = np.maximum(color_temp, dark)
-            # color_temp = [str(hex(int(v)))[-2:] for v in list(color_temp)]
-            color_temp = [str("{:02x}".format(int(v))) for v in list(color_temp)]
+            fraction = citation / 256. + 0.5
+            fraction = min(1., fraction)
+            s_modified = color_high_hsv[1] * fraction
+            # v_modified = color_high_hsv[2] * fraction  * fraction
+
+            # convert back to rgb
+            color_rgb = colorsys.hsv_to_rgb(color_high_hsv[0],
+                                            s_modified,
+                                            color_high_hsv[2])
+
+            # apply color to node label
+            color_temp = [str("{:02x}".format(int(val))) for val in list(color_rgb)]
             color_temp = '#' + ''.join(color_temp)
-            # color_temp = self.color['label']
             tmp = tmp.replace("colorLabel", color_temp)
-            # tmp = tmp.replace("colorNode", color_temp)
         else:
             tmp = tmp.replace("colorLabel", self.color['label'])
             # tmp = tmp.replace("colorNode", self.color['node'])
@@ -238,7 +248,7 @@ class AutoReferenceGraph:
             f.write('    node [comment="Wildcard node added automatic in EG.",\n')
             f.write('        fontname="sans-serif"\n')
             f.write('        fontsize=' + str(self.minimal_font_size) + '];\n')
-            # f.write('        size ="16, 4";\n')
+            # f.write('        size ="4, 4";\n')
             f.write('        ratio = "compress"\n')
             # f.write('        rankdir = LR;\n')
             f.write('        splines=ortho;\n')
@@ -321,8 +331,6 @@ class AutoReferenceGraph:
         temp = set(temp)
         return [i.split('&') for i in temp]
 
-
-
     def load_scupus_citation_bank(self, citation_back_path, loading_type='all'):
         """
         
@@ -350,9 +358,9 @@ class AutoReferenceGraph:
                     df_all = df_all.append(df)
         # remove duplicated items in relation
         relation_all = self.remove_duplicated_relation(relation_all)
-        #temp = ['&'.join(i) for i in relation_all]
-        #temp = set(temp)
-        #relation_all = [i.split('&') for i in temp]
+        # temp = ['&'.join(i) for i in relation_all]
+        # temp = set(temp)
+        # relation_all = [i.split('&') for i in temp]
         df_all = df_all.drop_duplicates(subset="ID")
         df_all.index = df_all['ID']
 
@@ -470,8 +478,3 @@ class AutoReferenceGraph:
         id_df = set(df.index)
         ids = id_relation.intersection(id_df)
         return df.loc[ids]
-
-
-
-
-

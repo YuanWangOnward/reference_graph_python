@@ -11,21 +11,22 @@ import os
 import glob
 import pickle
 import functools
+
+# global setting
+PROJECT_PATH = "/home/ywang/PycharmProjects/reference_graph_python"
+RESEARCH_PATH = "/home/ywang/Desktop/research"
+GV_PATH = PROJECT_PATH + "/graph.gv"
+SEED_RELATION_PATH = RESEARCH_PATH + "/relationship_sentence.csv"
+SEED_XLSX_PATH = RESEARCH_PATH + "/reference_graph_sentence.xlsx"
+CITATION_BANK_PATH = RESEARCH_PATH + "/citation_bank"
+GRAPH_OUTPUT_PATH = PROJECT_PATH + "/graph"
+SCUPUS_RELATION_PATH =PROJECT_PATH + "/scupus_relation.csv"
+
 importlib.reload(auto_reference_graph)
 arg = auto_reference_graph.AutoReferenceGraph()
 arg.display_keys = ['Citation', 'Title']
-arg.temple = arg.load_template("/Users/yuanwang/Google_Drive/projects/Gits/reference_graph_python/rs/nodeTemplate.txt")
+arg.temple = arg.load_template(PROJECT_PATH + "/rs/nodeTemplate.txt")
 
-# global setting
-PROJECT_PATH = "/Users/yuanwang/Google_Drive/projects/Gits/reference_graph_python"
-GV_PATH = "/Users/yuanwang/Google_Drive/projects/Gits/reference_graph_python/graph.gv"
-
-SEED_RELATION_PATH = "/Users/yuanwang/Google_Drive/job/2017ATT/research/relationship_sentence.csv"
-SEED_XLSX_PATH = "/Users/yuanwang/Google_Drive/job/2017ATT/research/reference_graph_sentence.xlsx"
-
-CITATION_BANK_PATH = "/Users/yuanwang/Google_Drive/job/2017ATT/research/citation_bank"
-GRAPH_OUTPUT_PATH = "/Users/yuanwang/Google_Drive/projects/Gits/reference_graph_python/graph"
-SCUPUS_RELATION_PATH = "/Users/yuanwang/Google_Drive/projects/Gits/reference_graph_python/scupus_relation.csv"
 
 # load Scupus citation bank
 df, relation = arg.load_scupus_citation_bank(CITATION_BANK_PATH, 'all')
