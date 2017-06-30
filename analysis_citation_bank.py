@@ -51,6 +51,7 @@ df = arg.remove_isolated_reference(df, relation)
 # create .gv file
 arg.create_gv_file(GV_PATH, df, relation)
 
+
 # draw the reference graph
 outpout_type = 'pdf'
 arg.create_graph(GV_PATH, '.'.join([GRAPH_OUTPUT_PATH, outpout_type]), outpout_type)
