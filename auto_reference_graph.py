@@ -15,7 +15,13 @@ class AutoReferenceGraph:
                       'content': "#EFE7E7", 'label_emphasized': "#9B2D1F", 'content_emphasized': "#EFE7E7",
                       'label_review': "#A28E6A"}
         self.edge_style = {'Leads_to': '[ weight=4, penwidth=3, color="#855D5D"]',
-                           'Cites': '[ weight=2, penwidth=2, color="#855D5D"]'}
+                           'Cites': '[ weight=10, penwidth=2, color="#855D5D"]'}
+        self.preserved_keys = ['ID', 'Title', 'Label', 'Citation', 'Note']
+        self.key_replacement = {'Cited by': 'Citation'}
+        self.minimal_font_size = 20
+        self.maximal_font_size = 128
+        self.time_line_font_size = 42
+
         try:
             self.template = self.load_template("./rs/nodeTemplate.txt")
         except:
@@ -93,24 +99,28 @@ class AutoReferenceGraph:
     def add_a_node(self, template, items, values, display_keys=None, color=None):
         """ add a node to graph"""
         if display_keys is None:
-            display_keys = items
+            if hasattr(self, 'display_keys'):
+                display_keys = self.display_keys
+            else:
+                display_keys = items
 
         if color is None:
             color = self.color
 
         tmp = copy.deepcopy(template)
         # look for label and title first, to place them on top
-        # encoding by citation
+        # encoding label size by citation
         if "Citation" in items:
-            tmp = tmp.replace("$$$$",
-                              '<TR><TD COLSPAN="2" BGCOLOR="colorLabel"><FONT  POINT-SIZE="20" COLOR="colorLabelFont">'
-                              + self.content_wrapper(
-                                  str(values[list(items).index("Label")])) + '</FONT></TD></TR>\n ' + "$$$$")
+            font_size = \
+                str(min((values[list(items).index("Citation")]) / 20 + self.minimal_font_size, self.maximal_font_size))
         else:
-            tmp = tmp.replace("$$$$",
-                              '<TR><TD COLSPAN="2" BGCOLOR="colorLabel"><FONT  POINT-SIZE="20" COLOR="colorLabelFont">'
-                              + self.content_wrapper(
-                                  str(values[list(items).index("Label")])) + '</FONT></TD></TR>\n ' + "$$$$")
+            font_size = self.minimal_font_size
+        tmp = tmp.replace("$$$$",
+                          '<TR><TD COLSPAN="2" BGCOLOR="colorLabel"><FONT  POINT-SIZE="' +
+                          font_size + '" COLOR="colorLabelFont">'
+                          + self.content_wrapper(
+                              str(values[list(items).index("Label")])) + '</FONT></TD></TR>\n ' + "$$$$")
+        # add title
         tmp = tmp.replace("$$$$", '<TR><TD COLSPAN="2" BGCOLOR="colorContent"><FONT COLOR="colorContentFont">'
                           + self.content_wrapper(
             str(values[list(items).index("Title")])) + '</FONT></TD></TR>\n ' + "$$$$")
@@ -125,8 +135,9 @@ class AutoReferenceGraph:
                     tmp = tmp.replace("$$$$",
                                       '<TR><TD COLSPAN="1" width="20">' + item + '</TD><TD COLSPAN="1" width="180">'
                                       + self.content_wrapper(str(value)) + '</TD></TR>\n ' + "$$$$")
-        # note shooud be put at the end
-        if str(values[list(items).index("Note")]) != None and str(values[list(items).index("Note")]) != 'None':
+        # note should be put at the end
+        if str(values[list(items).index("Note")]) != None \
+                and str(values[list(items).index("Note")]) not in ['None', 'nan']:
             tmp = tmp.replace("$$$$", '<TR><TD COLSPAN="2">'
                               + self.content_wrapper(str(values[list(items).index("Note")])) + '</TD></TR>\n ' + "$$$$")
 
@@ -140,8 +151,12 @@ class AutoReferenceGraph:
             shallow = np.array([float(int(self.color['content'][1:3], 16)),
                                 float(int(self.color['content'][3:5], 16)),
                                 float(int(self.color['content'][5:7], 16))])
-            color_temp = dark + (64. - float(values[list(items).index("Citation")])) / 64. * np.linalg.norm(
-                shallow - dark)
+            citation = str(int(values[list(items).index("Citation")]))
+            if citation.isdigit():
+                citation = float(citation)
+            else:
+                citation = 0.
+            color_temp = dark + (64. - citation - 32) / 64. * np.linalg.norm(shallow - dark)
             color_temp = np.minimum(color_temp, shallow)
             color_temp = np.maximum(color_temp, dark)
             color_temp = [str(hex(int(v)))[-2:] for v in list(color_temp)]
@@ -150,9 +165,9 @@ class AutoReferenceGraph:
             tmp = tmp.replace("colorLabel", color_temp)
             # tmp = tmp.replace("colorLabel", self.color['label'])
         else:
-            tmp = tmp.replace("colorNode", self.color['node'])
+            tmp = tmp.replace("colorLabel", self.color['label'])
 
-        # tmp = tmp.replace("colorLabel", self.color['label'])
+        tmp = tmp.replace("colorNode", self.color['node'])
         tmp = tmp.replace("colorContentFont", self.color['content_font'])
         tmp = tmp.replace("colorContent", self.color['content'])
         return tmp
@@ -203,17 +218,18 @@ class AutoReferenceGraph:
             f.write('digraph G {\n')
             f.write('    edge [comment="Wildcard node added automatic in EG."];\n')
             f.write('    node [comment="Wildcard node added automatic in EG.",\n')
-            f.write('        fontname="sans-serif"];\n')
-            # f.write('        size ="8, 20";\n')
+            f.write('        fontname="sans-serif"\n')
+            f.write('        fontsize=' + str(self.minimal_font_size) + '];\n')
+            # f.write('        size ="8, 8";\n')
             f.write('        ratio = "compress"\n')
             f.write('        rankdir = LR;\n')
             f.write('        splines=ortho;\n')
-            f.write('        ranksep=0.5;\n')
+            # f.write('        ranksep=4;\n')
             # f.write('        nodesep=0.2;\n')
-            f.write('        sep=0.3;\n')
+            # f.write('        sep=0.3;\n')
             # add time line
             f.write('    {')
-            f.write('        node[shape = plaintext fontsize = 28];')
+            f.write('        node[shape = plaintext fontsize = ' + str(self.time_line_font_size) + ' ];')
             for year in sorted(set(df['Year'])):
                 if year != sorted(set(df['Year']))[-1]:
                     f.write('        ' + str(year) + ' ->')
@@ -233,16 +249,11 @@ class AutoReferenceGraph:
             for row in relations:
                 tmp = row
                 tmp = tmp[0] + ' -> ' + tmp[1] + self.edge_style[tmp[2]]
-                f.write('    ' + tmp)
+                f.write('    ' + tmp + '\n')
 
             # add nodes
             for idx in df.index:
-                if 'if_record' in df.columns:
-                    if df.loc[idx]['if_record']:
-                        f.write(self.add_a_node(self.template, df.columns, df.loc[idx]))
-                    else:
-                        pass
-
+                f.write(self.add_a_node(self.template, df.columns, df.loc[idx]))
             f.write('}\n')
 
     def create_graph(self, gv_path, output_path, output_type):
@@ -253,27 +264,46 @@ class AutoReferenceGraph:
         else:
             raise ValueError('type error')
 
-    def add_id(self, df):
-        """
-        add id column to a dataframe
-        :param df: 
-        :return: 
-        """
-        temp = []
-        for idx in range(len(df)):
-            temp.append(self.make_id(df.iloc[idx]['Authors'], df.iloc[idx]['Year'], df.iloc[idx]['Title']))
-        df['ID'] = temp
-        df.index = df['ID']
-        return df
-
-    def make_id(self, author, year, title):
+    def make_id_and_label(self, author, year, title):
         regex = re.compile('[^a-zA-Z0-9 ]')
         temp1 = regex.sub('', author)
         temp1 = temp1.split(' ')[0]
         temp2 = str(year)
         temp3 = regex.sub('', title)
         temp3 = ''.join(temp3.title().split(' ')[0:3])
-        return ''.join([temp1, temp2, temp3])
+        return [''.join([temp1, temp2, temp3]), ''.join([temp1, temp2])]
+
+    def prepare_df(self, df):
+        """
+        Add basic info (columns) to DataFrame, including ID, Title, Label, Note
+        :param df:
+        :return:
+        """
+        if 'ID' not in df.columns:
+            for idx in df.index:
+                id, label = self.make_id_and_label(df.loc[idx]['Authors'], df.loc[idx]['Year'], df.loc[idx]['Title'])
+                df.set_value(idx, 'ID', id)
+
+        if 'Label' not in df.columns:
+            for idx in df.index:
+                id, label = self.make_id_and_label(df.loc[idx]['Authors'], df.loc[idx]['Year'], df.loc[idx]['Title'])
+                df.set_value(idx, 'Label', label)
+
+        if 'Note' not in df.columns:
+            df['Note'] = np.nan
+            # for idx in df.index:
+            #    df.set_value(idx, 'Note', '')
+        df = df.rename(columns=self.key_replacement)
+        df['Citation'] = [0 if np.isnan(i) else i for i in df['Citation']]
+        # print('# reference without citation: ' + str(sum([np.isnan(i) for i in df['Citation']]))
+        return df
+
+    def remove_duplicated_relation(self, relation):
+        temp = ['&'.join(i) for i in relation]
+        temp = set(temp)
+        return [i.split('&') for i in temp]
+
+
 
     def load_scupus_citation_bank(self, citation_back_path, loading_type='all'):
         """
@@ -291,16 +321,23 @@ class AutoReferenceGraph:
         for file in files:
             print('loading ' + file)
             df = pd.read_csv(os.path.join(citation_back_path, file), sep=',')
-            df = self.add_id(df)
+            df = self.prepare_df(df)
             if file[-5] == '_':
                 if loading_type in ['all', 'cited_by']:
                     relation_all = relation_all + [[file[:-5], id, 'Cites'] for id in df['ID']]
+                    df_all = df_all.append(df)
             else:
                 if loading_type in ['all', 'citing']:
                     relation_all = relation_all + [[id, file[:-4], 'Cites'] for id in df['ID']]
-            df_all = df_all.append(df)
-        # df_all = self.add_id(df_all)
+                    df_all = df_all.append(df)
+        # remove duplicated items in relation
+        relation_all = self.remove_duplicated_relation(relation_all)
+        #temp = ['&'.join(i) for i in relation_all]
+        #temp = set(temp)
+        #relation_all = [i.split('&') for i in temp]
         df_all = df_all.drop_duplicates(subset="ID")
+        df_all.index = df_all['ID']
+
         return [df_all, relation_all]
 
     def get_citation_count(self, reference_list):
@@ -310,5 +347,113 @@ class AutoReferenceGraph:
         for id in ids:
             count[id] = reference_list.count(id)
         return count
+
+    def find_cohesive_data_set(self, relation, n_threshold):
+        """
+        Give a relationshiop table, find out the set of papers that have at least n_threshold relations with other
+        papers in the relationship table.
+        :param relation:
+        :param n_threshold:
+        :return:
+        """
+        relation_count_temp = [[item[0], item[1]] for item in relation]
+        relation_count_temp = functools.reduce(lambda x, y: x + y, relation_count_temp)
+
+        relation_strength = pd.Series()
+        for i in set(relation_count_temp):
+            relation_strength[i] = relation_count_temp.count(i)
+        relation_strength = relation_strength.sort_values(ascending=False)
+
+        return relation_strength[relation_strength.values > n_threshold]
+
+    def filter_relation_by_cohesive_set(self, relation, cohesive_set):
+        """
+        Find out relations between the cohesive reference set
+        :param relation:
+        :param cohesive_set: list like of reference ID's
+        :return:
+        """
+        relation_cohesive = []
+        for item in relation:
+            if item[0] in cohesive_set and item[1] in cohesive_set:
+                relation_cohesive.append(item)
+        return relation_cohesive
+
+    def filter_reference_info_by_cohesive_set(self, df, cohesive_set):
+        """
+        Pick the subset of pandas.DataFrame records that are in the cohesive_set
+        :param df:
+        :param cohesive_set:
+        :return:
+        """
+        indexes = [idx for idx in df.index if idx in cohesive_set]
+
+        return df.loc[indexes]
+
+    def load_seed_collection(self, RELATION_PATH, XLSX_PATH):
+        """
+        Load the seed collection of references and relationship
+        :param RELATION_PATH:
+        :param XLSX_PATH:
+        :return:
+        """
+        # load relationship
+        relations = list(csv.reader(open(RELATION_PATH, 'r')))
+        IDs = list(set(functools.reduce(lambda x, y: x + y, [[row[0], row[1]] for row in relations])))
+        df_relation = pd.DataFrame(IDs, columns=['ID'])
+        year = pd.Series([str("".join(list(filter(str.isdigit, s))[:4])) for s in df_relation["ID"]])
+        label = pd.Series([s[: s.find(year[i]) + 4] for i, s in enumerate(df_relation['ID'])])
+        df_relation['Year'] = year
+        df_relation['Label'] = label
+        # df_relation['if_record'] = False
+        for col in df_relation.columns:
+            df_relation[col] = [value.strip() if isinstance(value, str) else value for value in df_relation[col]]
+        df_relation.index = df_relation['ID']
+
+        # load in .xlsx file
+        wb = load_workbook(filename=XLSX_PATH)
+        ws = wb.active
+        df = pd.DataFrame(ws.values)
+        df.columns = list(df.loc[0])
+        df = df.drop(df.index[0])
+        df.index = range(len(df.index))
+        # check if year and label are in the xlsx table, if not, abstract the info from ID
+        if 'year' not in [item.lower() for item in df.columns]:
+            year = pd.Series([int("".join(list(filter(str.isdigit, s))[:4])) for s in df["ID"]])
+            df['Year'] = year
+        if 'label' not in [item.lower() for item in df.columns]:
+            year = pd.Series([str("".join(list(filter(str.isdigit, s))[:4])) for s in df["ID"]])
+            label = pd.Series([s[: s.find(year[i]) + 4] for i, s in enumerate(df['ID'])])
+            df['Label'] = label
+        for col in df.columns:
+            df[col] = [value.strip() if isinstance(value, str) else value for value in df[col]]
+        # df['if_record'] = True
+        df.index = df['ID']
+        df.index = [id.strip() for id in df['ID']]
+
+        # combine information
+        df = df.append(df_relation)
+        df = df.drop_duplicates(subset='ID')
+
+        return [df, relations]
+
+    def relation_to_ids(self, relations):
+        IDs = list(set(functools.reduce(lambda x, y: x + y, [[row[0], row[1]] for row in relations])))
+        return IDs
+
+    def remove_isolated_reference(self, df, relations):
+        """
+        remove isolated item in reference list, namly without any relationship
+        :param df:
+        :param relations:
+        :return:
+        """
+        id_relation = set(self.relation_to_ids(relations))
+        id_df = set(df.index)
+        ids = id_relation.intersection(id_df)
+        return df.loc[ids]
+
+
+
 
 

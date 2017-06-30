@@ -21,11 +21,11 @@ def add_a_node(template, items, values):
         tmp = tmp.replace("$$$$",
                           '<TR><TD COLSPAN="2" BGCOLOR="colorLabel"><FONT  POINT-SIZE="20" COLOR="colorLabelFont">'
                           + content_wrapper(str(values[list(items).index("Label")])) + '</FONT></TD></TR>\n ' + "$$$$")
-        # font_size = str(min((values[list(items).index("Citation")]) / 20 + 14, 128))
-        # tmp = tmp.replace("$$$$",
-        #                  '<TR><TD COLSPAN="2" BGCOLOR="colorLabel"><FONT  POINT-SIZE="' +
-        #                  font_size + '" COLOR="colorLabelFont">'
-        #                  + content_wrapper(str(values[list(items).index("Label")])) + '</FONT></TD></TR>\n ' + "$$$$")
+        font_size = str(min((values[list(items).index("Citation")]) / 20 + 14, 128))
+        tmp = tmp.replace("$$$$",
+                         '<TR><TD COLSPAN="2" BGCOLOR="colorLabel"><FONT  POINT-SIZE="' +
+                         font_size + '" COLOR="colorLabelFont">'
+                      + content_wrapper(str(values[list(items).index("Label")])) + '</FONT></TD></TR>\n ' + "$$$$")
     else:
         tmp = tmp.replace("$$$$",
                           '<TR><TD COLSPAN="2" BGCOLOR="colorLabel"><FONT  POINT-SIZE="20" COLOR="colorLabelFont">'
@@ -42,7 +42,7 @@ def add_a_node(template, items, values):
             if value != None and value not in ['None']:
                 tmp = tmp.replace("$$$$", '<TR><TD COLSPAN="1" width="20">' + item + '</TD><TD COLSPAN="1" width="180">'
                                   + content_wrapper(str(value)) + '</TD></TR>\n ' + "$$$$")
-    # note shooud be put at the end
+    # note should be put at the end
     if str(values[list(items).index("Note")]) != None and str(values[list(items).index("Note")]) != 'None':
         tmp = tmp.replace("$$$$", '<TR><TD COLSPAN="2">'
                           + content_wrapper(str(values[list(items).index("Note")])) + '</TD></TR>\n ' + "$$$$")
