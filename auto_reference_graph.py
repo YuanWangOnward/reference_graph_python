@@ -11,16 +11,27 @@ import glob
 
 class AutoReferenceGraph:
     def __init__(self):
+        """
         self.color = {'node': "#855D5D", 'label_font': "#FFFFFF", 'label': "#9B2D1F", 'content_font': "#000000",
                       'content': "#EFE7E7", 'label_emphasized': "#9B2D1F", 'content_emphasized': "#EFE7E7",
                       'label_review': "#A28E6A"}
         self.edge_style = {'Leads_to': '[ weight=4, penwidth=3, color="#855D5D"]',
                            'Cites': '[ weight=10, penwidth=2, color="#855D5D"]'}
+        """
+        self.color = {  # 'node': "#855D5D",
+                        'node': "#595959",
+                      'label_font': "#FFFFFF", 'label': "#00B0E9",
+                      'content_font': "#000000", 'content': "#D0E7F8",
+                      'label_emphasized': "#9B2D1F", 'content_emphasized': "#EFE7E7",
+                      'label_review': "#A28E6A"}
+
+        self.edge_style = {'Leads_to': '[ weight=4, penwidth=3, color="#BFBFBF"]',
+                           'Cites': '[ weight=10, penwidth=2, color="#BFBFBF"]'}
         self.preserved_keys = ['ID', 'Title', 'Label', 'Citation', 'Note']
         self.key_replacement = {'Cited by': 'Citation'}
-        self.minimal_font_size = 20
-        self.maximal_font_size = 128
-        self.time_line_font_size = 42
+        self.minimal_font_size = 12
+        self.maximal_font_size = 60
+        self.time_line_font_size = 36
 
         try:
             self.template = self.load_template("./rs/nodeTemplate.txt")
@@ -121,14 +132,16 @@ class AutoReferenceGraph:
                           + self.content_wrapper(
                               str(values[list(items).index("Label")])) + '</FONT></TD></TR>\n ' + "$$$$")
         # add title
+        '''
         tmp = tmp.replace("$$$$", '<TR><TD COLSPAN="2" BGCOLOR="colorContent"><FONT COLOR="colorContentFont">'
                           + self.content_wrapper(
             str(values[list(items).index("Title")])) + '</FONT></TD></TR>\n ' + "$$$$")
+        '''
 
         for item, value in zip(items, values):
             if item.strip() == "ID":
                 tmp = tmp.replace("nodeID", value)
-            elif item.strip() in ["Label", "Title", "Year", "Note"]:
+            elif item.strip() in ["Label", "Title", "Year", "Note", "Citation"]:
                 pass
             elif item in display_keys:
                 if value != None and value not in ['None']:
@@ -136,13 +149,16 @@ class AutoReferenceGraph:
                                       '<TR><TD COLSPAN="1" width="20">' + item + '</TD><TD COLSPAN="1" width="180">'
                                       + self.content_wrapper(str(value)) + '</TD></TR>\n ' + "$$$$")
         # note should be put at the end
+        '''
         if str(values[list(items).index("Note")]) != None \
                 and str(values[list(items).index("Note")]) not in ['None', 'nan']:
             tmp = tmp.replace("$$$$", '<TR><TD COLSPAN="2">'
                               + self.content_wrapper(str(values[list(items).index("Note")])) + '</TD></TR>\n ' + "$$$$")
+        '''
+
 
         tmp = tmp.replace("$$$$", '')
-        tmp = tmp.replace("colorNode", self.color['node'])
+        # tmp = tmp.replace("colorNode", self.color['node'])
         tmp = tmp.replace("colorLabelFont", self.color['label_font'])
         if "Citation" in items:
             dark = np.array([float(int(self.color['label'][1:3], 16)),
@@ -156,16 +172,18 @@ class AutoReferenceGraph:
                 citation = float(citation)
             else:
                 citation = 0.
-            color_temp = dark + (64. - citation - 32) / 64. * np.linalg.norm(shallow - dark)
+            color_temp = dark + (64. - citation) / 64. * np.linalg.norm(shallow - dark)
             color_temp = np.minimum(color_temp, shallow)
             color_temp = np.maximum(color_temp, dark)
-            color_temp = [str(hex(int(v)))[-2:] for v in list(color_temp)]
+            # color_temp = [str(hex(int(v)))[-2:] for v in list(color_temp)]
+            color_temp = [str("{:02x}".format(int(v))) for v in list(color_temp)]
             color_temp = '#' + ''.join(color_temp)
             # color_temp = self.color['label']
             tmp = tmp.replace("colorLabel", color_temp)
-            # tmp = tmp.replace("colorLabel", self.color['label'])
+            # tmp = tmp.replace("colorNode", color_temp)
         else:
             tmp = tmp.replace("colorLabel", self.color['label'])
+            # tmp = tmp.replace("colorNode", self.color['node'])
 
         tmp = tmp.replace("colorNode", self.color['node'])
         tmp = tmp.replace("colorContentFont", self.color['content_font'])
@@ -220,9 +238,9 @@ class AutoReferenceGraph:
             f.write('    node [comment="Wildcard node added automatic in EG.",\n')
             f.write('        fontname="sans-serif"\n')
             f.write('        fontsize=' + str(self.minimal_font_size) + '];\n')
-            # f.write('        size ="8, 8";\n')
+            # f.write('        size ="16, 4";\n')
             f.write('        ratio = "compress"\n')
-            f.write('        rankdir = LR;\n')
+            # f.write('        rankdir = LR;\n')
             f.write('        splines=ortho;\n')
             # f.write('        ranksep=4;\n')
             # f.write('        nodesep=0.2;\n')

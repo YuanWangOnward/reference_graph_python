@@ -14,29 +14,21 @@ import functools
 importlib.reload(auto_reference_graph)
 arg = auto_reference_graph.AutoReferenceGraph()
 arg.display_keys = ['Citation', 'Title']
-arg.temple = arg.load_template("/home/ywang/Desktop/reference_graph_python/rs/nodeTemplate.txt")
+arg.temple = arg.load_template("/Users/yuanwang/Google_Drive/projects/Gits/reference_graph_python/rs/nodeTemplate.txt")
 
 # global setting
-'''
+PROJECT_PATH = "/Users/yuanwang/Google_Drive/projects/Gits/reference_graph_python"
 GV_PATH = "/Users/yuanwang/Google_Drive/projects/Gits/reference_graph_python/graph.gv"
-RELATION_PATH = "/Users/yuanwang/Google_Drive/job/2017ATT/research/relationship_sentence.csv"
-XLSX_PATH = "/Users/yuanwang/Google_Drive/job/2017ATT/research/reference_graph_sentence.xlsx"
+
+SEED_RELATION_PATH = "/Users/yuanwang/Google_Drive/job/2017ATT/research/relationship_sentence.csv"
+SEED_XLSX_PATH = "/Users/yuanwang/Google_Drive/job/2017ATT/research/reference_graph_sentence.xlsx"
+
 CITATION_BANK_PATH = "/Users/yuanwang/Google_Drive/job/2017ATT/research/citation_bank"
-GRAPH_OUTPUT_PATH = "/Users/yuanwang/Google_Drive/projects/Gits/reference_graph_python/graph.pdf"
+GRAPH_OUTPUT_PATH = "/Users/yuanwang/Google_Drive/projects/Gits/reference_graph_python/graph"
 SCUPUS_RELATION_PATH = "/Users/yuanwang/Google_Drive/projects/Gits/reference_graph_python/scupus_relation.csv"
-'''
-RESEARCH_PATH = "/home/ywang/Desktop/research"
-PROJECT_PATH = "/home/ywang/Desktop/reference_graph_python"
-GV_PATH = PROJECT_PATH + "/graph.gv"
-SEED_RELATION_PATH = RESEARCH_PATH + "/relationship_sentence.csv"
-SEED_XLSX_PATH = RESEARCH_PATH + "/reference_graph_sentence.xlsx"
-CITATION_BANK_PATH = RESEARCH_PATH + "/citation_bank"
-GRAPH_OUTPUT_PATH = PROJECT_PATH + "/graph"
-SCUPUS_RELATION_PATH =PROJECT_PATH + "/scupus_relation.csv"
 
 # load Scupus citation bank
 df, relation = arg.load_scupus_citation_bank(CITATION_BANK_PATH, 'all')
-
 
 # find the cohesive paper set
 cohesive_reference_set = arg.find_cohesive_data_set(relation, n_threshold=5)
@@ -59,12 +51,10 @@ df = arg.remove_isolated_reference(df, relation)
 # create .gv file
 arg.create_gv_file(GV_PATH, df, relation)
 
-
-
-
 # draw the reference graph
 outpout_type = 'pdf'
 arg.create_graph(GV_PATH, '.'.join([GRAPH_OUTPUT_PATH, outpout_type]), outpout_type)
+
 
 
 
