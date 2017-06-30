@@ -3,365 +3,267 @@ digraph G {
     node [comment="Wildcard node added automatic in EG.",
         fontname="sans-serif"
         fontsize=12];
+        size ="10, 20";
         ratio = "compress"
         splines=ortho;
     {        node[shape = plaintext fontsize = 36 ];        2005 ->        2008 ->        2010 ->        2011 ->        2012 ->        2013 ->        2014 ->        2015 ->        2016 ->        2017    }
     {rank = same;    2005;    Pang2005SeeingStarsExploiting;    }
     {rank = same;    2008;    Collobert2008AUnifiedArchitecture;    }
     {rank = same;    2010;    Mitchell2010CompositionInDistributional;    }
-    {rank = same;    2011;    Collobert2011NaturalLanguageProcessing;    Socher2011DynamicPoolingAnd;    Socher2011SemisupervisedRecursiveAutoencoders;    }
+    {rank = same;    2011;    Collobert2011NaturalLanguageProcessing;    Socher2011SemisupervisedRecursiveAutoencoders;    Socher2011DynamicPoolingAnd;    }
     {rank = same;    2012;    Socher2012SemanticCompositionalityThrough;    }
-    {rank = same;    2013;    Mikolov2013DistributedRepresentationsOfwords;    Socher2013RecursiveDeepModels;    Mikolov2013NoTitleAvailable;    Mikolov2013DistributedRepresentationsOF;    Mikolov2013EfficientEstimationOf;    }
-    {rank = same;    2014;    Kim2014ConvolutionalNeuralNetworks;    Kalchbrenner2014AConvolutionalNeural;    Le2014DistributedRepresentationsOf;    Irsoy2014DeepRecursiveNeural;    Chung2014EmpiricalEvaluationOf;    Santos2014DeepConvolutionalNeural;    Hu2014ConvolutionalNeuralNetwork;    }
-    {rank = same;    2015;    Kiros2015SkipthoughtVectors;    Ma2015DependencybasedConvolutionalNeural;    He2015MultiperspectiveSentenceSimilarity;    Qian2015LearningTagEmbeddings;    Wan2015ADeepArchitecture;    Qiu2015ConvolutionalNeuralTensor;    Zhao2015SelfadaptiveHierarchicalSentence;    Zhang2015LocalTranslationPrediction;    Hu2015ConvolutionalNeuralNetwork;    Yin2015AbcnnAttentionbasedConvolutional;    Yin2015MultigrancnnAnArchitecture;    Boom2015LearningSemanticSimilarity;    Mou2015DiscriminativeNeuralSentence;    Tai2015ImprovedSemanticRepresentations;    }
-    {rank = same;    2016;    Kim2016ExploringConvolutionalAnd;    Lee2016SequentialShorttextClassification;    Cheng2016LongShortTermMemorynetworks;    Santos2016ImprovedRepresentationLearning;    Palangi2016DeepSentenceEmbedding;    Logeswaran2016SentenceOrderingUsing;    Gan2016UnsupervisedLearningOf;    Parikh2016ADecomposableAttention;    Ramachandran2016UnsupervisedPretrainingFor;    Margarit2016ABatchnormalizedRecurrent;    Wang2016SentenceSimilarity;    Er2016AttentionPoolingbasedConvolutional;    Kenter2016SiameseCbowOptimizing;    Hill2016LearningDistributedRepresentations;    Liu2016LanguageInferenceUsing;    Goldberg2016APrimerOn;    Tan2016ANeuralNetwork;    }
-    {rank = same;    2017;    Lin2017AStructuredSelfattentive;    Gui2017LearningRepresentationsFrom;    Wang2017BilateralMultiperspectiveMatching;    Fu2017CombineHownetLexison;    Jernite2017DiscoursebasedObjectivesFor;    Zhao2017TopicawareDeepCompositional;    }
-    Pang2005SeeingStarsExploiting -> Socher2011SemisupervisedRecursiveAutoencoders[ weight=10, penwidth=2, color="#BFBFBF"]
-    Collobert2011NaturalLanguageProcessing -> Ma2015DependencybasedConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Collobert2008AUnifiedArchitecture -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kim2014ConvolutionalNeuralNetworks -> Gui2017LearningRepresentationsFrom[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Er2016AttentionPoolingbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
-    Collobert2008AUnifiedArchitecture -> Socher2013RecursiveDeepModels[ weight=10, penwidth=2, color="#BFBFBF"]
-    Le2014DistributedRepresentationsOf -> Tai2015ImprovedSemanticRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
-    Ma2015DependencybasedConvolutionalNeural -> Goldberg2016APrimerOn[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Ma2015DependencybasedConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Santos2014DeepConvolutionalNeural -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013EfficientEstimationOf -> Mikolov2013DistributedRepresentationsOF[ weight=10, penwidth=2, color="#BFBFBF"]
-    Le2014DistributedRepresentationsOf -> Er2016AttentionPoolingbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Kim2014ConvolutionalNeuralNetworks[ weight=10, penwidth=2, color="#BFBFBF"]
-    Yin2015AbcnnAttentionbasedConvolutional -> Wang2016SentenceSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Gui2017LearningRepresentationsFrom[ weight=10, penwidth=2, color="#BFBFBF"]
-    Le2014DistributedRepresentationsOf -> Boom2015LearningSemanticSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Kalchbrenner2014AConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOfwords -> Yin2015MultigrancnnAnArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Zhao2017TopicawareDeepCompositional[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOF -> Le2014DistributedRepresentationsOf[ weight=10, penwidth=2, color="#BFBFBF"]
-    Collobert2011NaturalLanguageProcessing -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
-    Wan2015ADeepArchitecture -> Yin2015AbcnnAttentionbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
-    Pang2005SeeingStarsExploiting -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hu2015ConvolutionalNeuralNetwork -> Mou2015DiscriminativeNeuralSentence[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kim2014ConvolutionalNeuralNetworks -> Zhao2015SelfadaptiveHierarchicalSentence[ weight=10, penwidth=2, color="#BFBFBF"]
-    Pang2005SeeingStarsExploiting -> Le2014DistributedRepresentationsOf[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hu2014ConvolutionalNeuralNetwork -> Yin2015MultigrancnnAnArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Zhao2015SelfadaptiveHierarchicalSentence[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Tan2016ANeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Er2016AttentionPoolingbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOfwords -> Kim2014ConvolutionalNeuralNetworks[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kiros2015SkipthoughtVectors -> Kenter2016SiameseCbowOptimizing[ weight=10, penwidth=2, color="#BFBFBF"]
-    Irsoy2014DeepRecursiveNeural -> Ma2015DependencybasedConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kiros2015SkipthoughtVectors -> Jernite2017DiscoursebasedObjectivesFor[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013EfficientEstimationOf -> Kiros2015SkipthoughtVectors[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Gan2016UnsupervisedLearningOf[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013EfficientEstimationOf -> Boom2015LearningSemanticSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2012SemanticCompositionalityThrough -> Santos2014DeepConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Tai2015ImprovedSemanticRepresentations -> He2015MultiperspectiveSentenceSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Er2016AttentionPoolingbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013NoTitleAvailable -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
-    Pang2005SeeingStarsExploiting -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Le2014DistributedRepresentationsOf[ weight=10, penwidth=2, color="#BFBFBF"]
-    Pang2005SeeingStarsExploiting -> Kim2014ConvolutionalNeuralNetworks[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kim2014ConvolutionalNeuralNetworks -> Kiros2015SkipthoughtVectors[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Irsoy2014DeepRecursiveNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013NoTitleAvailable -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Hu2014ConvolutionalNeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013NoTitleAvailable -> Kenter2016SiameseCbowOptimizing[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hill2016LearningDistributedRepresentations -> Jernite2017DiscoursebasedObjectivesFor[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOfwords -> Kim2016ExploringConvolutionalAnd[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Irsoy2014DeepRecursiveNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Santos2014DeepConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Collobert2008AUnifiedArchitecture -> Yin2015MultigrancnnAnArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kiros2015SkipthoughtVectors -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOF -> Er2016AttentionPoolingbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
-    Collobert2008AUnifiedArchitecture -> Gan2016UnsupervisedLearningOf[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2012SemanticCompositionalityThrough -> Socher2013RecursiveDeepModels[ weight=10, penwidth=2, color="#BFBFBF"]
-    Santos2016ImprovedRepresentationLearning -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Kim2014ConvolutionalNeuralNetworks[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Ma2015DependencybasedConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Zhao2017TopicawareDeepCompositional[ weight=10, penwidth=2, color="#BFBFBF"]
-    Collobert2008AUnifiedArchitecture -> Mikolov2013DistributedRepresentationsOF[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011DynamicPoolingAnd -> Yin2015MultigrancnnAnArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
-    Le2014DistributedRepresentationsOf -> Qian2015LearningTagEmbeddings[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kim2014ConvolutionalNeuralNetworks -> Tan2016ANeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Le2014DistributedRepresentationsOf[ weight=10, penwidth=2, color="#BFBFBF"]
-    Collobert2011NaturalLanguageProcessing -> Kim2016ExploringConvolutionalAnd[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013NoTitleAvailable -> Le2014DistributedRepresentationsOf[ weight=10, penwidth=2, color="#BFBFBF"]
-    Tai2015ImprovedSemanticRepresentations -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Qian2015LearningTagEmbeddings[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Yin2015AbcnnAttentionbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Qiu2015ConvolutionalNeuralTensor[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Zhao2017TopicawareDeepCompositional[ weight=10, penwidth=2, color="#BFBFBF"]
-    Tai2015ImprovedSemanticRepresentations -> Kiros2015SkipthoughtVectors[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Kalchbrenner2014AConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Collobert2008AUnifiedArchitecture -> Kalchbrenner2014AConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Le2014DistributedRepresentationsOf -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Kiros2015SkipthoughtVectors[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hu2015ConvolutionalNeuralNetwork -> Yin2015MultigrancnnAnArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Ma2015DependencybasedConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hu2014ConvolutionalNeuralNetwork -> Santos2016ImprovedRepresentationLearning[ weight=10, penwidth=2, color="#BFBFBF"]
-    Yin2015MultigrancnnAnArchitecture -> Yin2015AbcnnAttentionbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOF -> Qiu2015ConvolutionalNeuralTensor[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOfwords -> Le2014DistributedRepresentationsOf[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOfwords -> Boom2015LearningSemanticSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kim2014ConvolutionalNeuralNetworks -> Hu2015ConvolutionalNeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Kiros2015SkipthoughtVectors[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOfwords -> Kenter2016SiameseCbowOptimizing[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2012SemanticCompositionalityThrough -> Mikolov2013DistributedRepresentationsOF[ weight=10, penwidth=2, color="#BFBFBF"]
-    Zhao2015SelfadaptiveHierarchicalSentence -> Kiros2015SkipthoughtVectors[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOF -> Goldberg2016APrimerOn[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOF -> Zhao2017TopicawareDeepCompositional[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Santos2014DeepConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Mou2015DiscriminativeNeuralSentence[ weight=10, penwidth=2, color="#BFBFBF"]
-    Palangi2016DeepSentenceEmbedding -> Zhao2017TopicawareDeepCompositional[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Hu2015ConvolutionalNeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
-    Collobert2011NaturalLanguageProcessing -> Le2014DistributedRepresentationsOf[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Zhao2015SelfadaptiveHierarchicalSentence[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kim2014ConvolutionalNeuralNetworks -> Goldberg2016APrimerOn[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013EfficientEstimationOf -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
-    Wan2015ADeepArchitecture -> Tan2016ANeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hu2014ConvolutionalNeuralNetwork -> He2015MultiperspectiveSentenceSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
-    Collobert2011NaturalLanguageProcessing -> Kim2014ConvolutionalNeuralNetworks[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Goldberg2016APrimerOn[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kim2014ConvolutionalNeuralNetworks -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013NoTitleAvailable -> Kiros2015SkipthoughtVectors[ weight=10, penwidth=2, color="#BFBFBF"]
-    Ramachandran2016UnsupervisedPretrainingFor -> Jernite2017DiscoursebasedObjectivesFor[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Hu2015ConvolutionalNeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Kim2014ConvolutionalNeuralNetworks[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOfwords -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
+    {rank = same;    2013;    Mikolov2013DistributedRepresentationsOfwords;    Mikolov2013EfficientEstimationOf;    Socher2013RecursiveDeepModels;    Mikolov2013NoTitleAvailable;    Mikolov2013DistributedRepresentationsOF;    }
+    {rank = same;    2014;    Le2014DistributedRepresentationsOf;    Kim2014ConvolutionalNeuralNetworks;    Hu2014ConvolutionalNeuralNetwork;    Chung2014EmpiricalEvaluationOf;    Irsoy2014DeepRecursiveNeural;    Santos2014DeepConvolutionalNeural;    Kalchbrenner2014AConvolutionalNeural;    }
+    {rank = same;    2015;    Zhang2015LocalTranslationPrediction;    Tai2015ImprovedSemanticRepresentations;    Mou2015DiscriminativeNeuralSentence;    Yin2015AbcnnAttentionbasedConvolutional;    Yin2015MultigrancnnAnArchitecture;    Qiu2015ConvolutionalNeuralTensor;    He2015MultiperspectiveSentenceSimilarity;    Qian2015LearningTagEmbeddings;    Boom2015LearningSemanticSimilarity;    Hu2015ConvolutionalNeuralNetwork;    Kiros2015SkipthoughtVectors;    Ma2015DependencybasedConvolutionalNeural;    Zhao2015SelfadaptiveHierarchicalSentence;    Wan2015ADeepArchitecture;    }
+    {rank = same;    2016;    Margarit2016ABatchnormalizedRecurrent;    Hill2016LearningDistributedRepresentations;    Logeswaran2016SentenceOrderingUsing;    Kenter2016SiameseCbowOptimizing;    Parikh2016ADecomposableAttention;    Lee2016SequentialShorttextClassification;    Palangi2016DeepSentenceEmbedding;    Cheng2016LongShortTermMemorynetworks;    Er2016AttentionPoolingbasedConvolutional;    Wang2016SentenceSimilarity;    Tan2016ANeuralNetwork;    Santos2016ImprovedRepresentationLearning;    Goldberg2016APrimerOn;    Gan2016UnsupervisedLearningOf;    Ramachandran2016UnsupervisedPretrainingFor;    Liu2016LanguageInferenceUsing;    Kim2016ExploringConvolutionalAnd;    }
+    {rank = same;    2017;    Lin2017AStructuredSelfattentive;    Gui2017LearningRepresentationsFrom;    Fu2017CombineHownetLexison;    Jernite2017DiscoursebasedObjectivesFor;    Wang2017BilateralMultiperspectiveMatching;    Zhao2017TopicawareDeepCompositional;    }
+    Mikolov2013DistributedRepresentationsOfwords -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
     Yin2015MultigrancnnAnArchitecture -> Wan2015ADeepArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
-    Yin2015MultigrancnnAnArchitecture -> Tan2016ANeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Socher2012SemanticCompositionalityThrough[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kim2014ConvolutionalNeuralNetworks -> Zhang2015LocalTranslationPrediction[ weight=10, penwidth=2, color="#BFBFBF"]
-    Collobert2008AUnifiedArchitecture -> Le2014DistributedRepresentationsOf[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hu2015ConvolutionalNeuralNetwork -> Yin2015AbcnnAttentionbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Socher2013RecursiveDeepModels[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kim2014ConvolutionalNeuralNetworks -> Mou2015DiscriminativeNeuralSentence[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011DynamicPoolingAnd -> Wan2015ADeepArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
-    Pang2005SeeingStarsExploiting -> Socher2013RecursiveDeepModels[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Kim2016ExploringConvolutionalAnd[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2012SemanticCompositionalityThrough -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Mou2015DiscriminativeNeuralSentence[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Qiu2015ConvolutionalNeuralTensor[ weight=10, penwidth=2, color="#BFBFBF"]
-    Palangi2016DeepSentenceEmbedding -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
-    Ma2015DependencybasedConvolutionalNeural -> Zhao2017TopicawareDeepCompositional[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011DynamicPoolingAnd -> Hu2015ConvolutionalNeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> He2015MultiperspectiveSentenceSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
-    Parikh2016ADecomposableAttention -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hu2015ConvolutionalNeuralNetwork -> Zhang2015LocalTranslationPrediction[ weight=10, penwidth=2, color="#BFBFBF"]
-    Collobert2008AUnifiedArchitecture -> Socher2011SemisupervisedRecursiveAutoencoders[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hill2016LearningDistributedRepresentations -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
-    Qiu2015ConvolutionalNeuralTensor -> Santos2016ImprovedRepresentationLearning[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kiros2015SkipthoughtVectors -> Tan2016ANeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Zhang2015LocalTranslationPrediction[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Wan2015ADeepArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOfwords -> Le2014DistributedRepresentationsOf[ weight=10, penwidth=2, color="#BFBFBF"]
     Kalchbrenner2014AConvolutionalNeural -> Zhang2015LocalTranslationPrediction[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOF -> Qian2015LearningTagEmbeddings[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Mou2015DiscriminativeNeuralSentence[ weight=10, penwidth=2, color="#BFBFBF"]
-    Cheng2016LongShortTermMemorynetworks -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
-    Le2014DistributedRepresentationsOf -> Zhang2015LocalTranslationPrediction[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Hu2014ConvolutionalNeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOF -> Kim2014ConvolutionalNeuralNetworks[ weight=10, penwidth=2, color="#BFBFBF"]
-    Le2014DistributedRepresentationsOf -> Irsoy2014DeepRecursiveNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Lee2016SequentialShorttextClassification -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
-    Parikh2016ADecomposableAttention -> Wang2017BilateralMultiperspectiveMatching[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOfwords -> Santos2016ImprovedRepresentationLearning[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Gui2017LearningRepresentationsFrom[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hu2015ConvolutionalNeuralNetwork -> Zhao2015SelfadaptiveHierarchicalSentence[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hu2015ConvolutionalNeuralNetwork -> Tan2016ANeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hu2015ConvolutionalNeuralNetwork -> Qiu2015ConvolutionalNeuralTensor[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kim2014ConvolutionalNeuralNetworks -> Zhao2017TopicawareDeepCompositional[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013NoTitleAvailable -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
-    Collobert2011NaturalLanguageProcessing -> Hu2015ConvolutionalNeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOF -> Gui2017LearningRepresentationsFrom[ weight=10, penwidth=2, color="#BFBFBF"]
-    Liu2016LanguageInferenceUsing -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOF -> Tan2016ANeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hu2015ConvolutionalNeuralNetwork -> Gui2017LearningRepresentationsFrom[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Qian2015LearningTagEmbeddings[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011DynamicPoolingAnd -> Hu2015ConvolutionalNeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
+    Collobert2011NaturalLanguageProcessing -> Kim2014ConvolutionalNeuralNetworks[ weight=10, penwidth=2, color="#BFBFBF"]
     Margarit2016ABatchnormalizedRecurrent -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
-    Pang2005SeeingStarsExploiting -> Ma2015DependencybasedConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kim2014ConvolutionalNeuralNetworks -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
-    Le2014DistributedRepresentationsOf -> Kim2016ExploringConvolutionalAnd[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
-    Le2014DistributedRepresentationsOf -> Ma2015DependencybasedConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Gan2016UnsupervisedLearningOf[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Goldberg2016APrimerOn[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOF -> Mou2015DiscriminativeNeuralSentence[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hu2014ConvolutionalNeuralNetwork -> Wan2015ADeepArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hill2016LearningDistributedRepresentations -> Jernite2017DiscoursebasedObjectivesFor[ weight=10, penwidth=2, color="#BFBFBF"]
+    Santos2016ImprovedRepresentationLearning -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Zhao2015SelfadaptiveHierarchicalSentence[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kim2014ConvolutionalNeuralNetworks -> Kim2016ExploringConvolutionalAnd[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Hu2014ConvolutionalNeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
+    Wan2015ADeepArchitecture -> Tan2016ANeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
+    Collobert2008AUnifiedArchitecture -> Kenter2016SiameseCbowOptimizing[ weight=10, penwidth=2, color="#BFBFBF"]
+    Le2014DistributedRepresentationsOf -> Gui2017LearningRepresentationsFrom[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Irsoy2014DeepRecursiveNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Lee2016SequentialShorttextClassification -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Tan2016ANeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
+    Gan2016UnsupervisedLearningOf -> Jernite2017DiscoursebasedObjectivesFor[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
     Socher2011DynamicPoolingAnd -> Le2014DistributedRepresentationsOf[ weight=10, penwidth=2, color="#BFBFBF"]
+    Collobert2008AUnifiedArchitecture -> Kalchbrenner2014AConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOF -> Er2016AttentionPoolingbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Ma2015DependencybasedConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013NoTitleAvailable -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Santos2014DeepConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kim2014ConvolutionalNeuralNetworks -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2012SemanticCompositionalityThrough -> Socher2013RecursiveDeepModels[ weight=10, penwidth=2, color="#BFBFBF"]
+    Collobert2011NaturalLanguageProcessing -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
+    Yin2015MultigrancnnAnArchitecture -> Yin2015AbcnnAttentionbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kim2014ConvolutionalNeuralNetworks -> Zhao2017TopicawareDeepCompositional[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2012SemanticCompositionalityThrough -> Santos2014DeepConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Ma2015DependencybasedConvolutionalNeural -> Zhao2017TopicawareDeepCompositional[ weight=10, penwidth=2, color="#BFBFBF"]
+    Le2014DistributedRepresentationsOf -> Qian2015LearningTagEmbeddings[ weight=10, penwidth=2, color="#BFBFBF"]
+    Parikh2016ADecomposableAttention -> Wang2017BilateralMultiperspectiveMatching[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOF -> Zhao2015SelfadaptiveHierarchicalSentence[ weight=10, penwidth=2, color="#BFBFBF"]
+    Tai2015ImprovedSemanticRepresentations -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hu2015ConvolutionalNeuralNetwork -> Qiu2015ConvolutionalNeuralTensor[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOfwords -> Boom2015LearningSemanticSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hu2015ConvolutionalNeuralNetwork -> Yin2015MultigrancnnAnArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hu2014ConvolutionalNeuralNetwork -> Santos2016ImprovedRepresentationLearning[ weight=10, penwidth=2, color="#BFBFBF"]
+    Pang2005SeeingStarsExploiting -> Kim2014ConvolutionalNeuralNetworks[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> He2015MultiperspectiveSentenceSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hu2014ConvolutionalNeuralNetwork -> Wan2015ADeepArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
+    Pang2005SeeingStarsExploiting -> Socher2011SemisupervisedRecursiveAutoencoders[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hill2016LearningDistributedRepresentations -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Goldberg2016APrimerOn[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Socher2012SemanticCompositionalityThrough[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Kiros2015SkipthoughtVectors[ weight=10, penwidth=2, color="#BFBFBF"]
+    Santos2014DeepConvolutionalNeural -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kim2014ConvolutionalNeuralNetworks -> Mou2015DiscriminativeNeuralSentence[ weight=10, penwidth=2, color="#BFBFBF"]
+    Parikh2016ADecomposableAttention -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
+    Collobert2011NaturalLanguageProcessing -> Ma2015DependencybasedConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOfwords -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013EfficientEstimationOf -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kim2014ConvolutionalNeuralNetworks -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOfwords -> Kenter2016SiameseCbowOptimizing[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hu2015ConvolutionalNeuralNetwork -> Zhang2015LocalTranslationPrediction[ weight=10, penwidth=2, color="#BFBFBF"]
+    Collobert2008AUnifiedArchitecture -> Gan2016UnsupervisedLearningOf[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hu2015ConvolutionalNeuralNetwork -> Zhao2017TopicawareDeepCompositional[ weight=10, penwidth=2, color="#BFBFBF"]
+    Qiu2015ConvolutionalNeuralTensor -> Wan2015ADeepArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Yin2015MultigrancnnAnArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kiros2015SkipthoughtVectors -> Kenter2016SiameseCbowOptimizing[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOF -> Tai2015ImprovedSemanticRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Qiu2015ConvolutionalNeuralTensor[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOF -> Zhao2017TopicawareDeepCompositional[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOF -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
+    Santos2014DeepConvolutionalNeural -> Goldberg2016APrimerOn[ weight=10, penwidth=2, color="#BFBFBF"]
     Kim2014ConvolutionalNeuralNetworks -> Er2016AttentionPoolingbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2012SemanticCompositionalityThrough -> Kim2014ConvolutionalNeuralNetworks[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOfwords -> Yin2015MultigrancnnAnArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Wan2015ADeepArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Kim2016ExploringConvolutionalAnd[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hu2015ConvolutionalNeuralNetwork -> Yin2015AbcnnAttentionbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kim2014ConvolutionalNeuralNetworks -> Kim2016ExploringConvolutionalAnd [ weight=4, penwidth=3, color="#BFBFBF"]
+    Pang2005SeeingStarsExploiting -> Ma2015DependencybasedConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011DynamicPoolingAnd -> He2015MultiperspectiveSentenceSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Le2014DistributedRepresentationsOf[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOF -> Qian2015LearningTagEmbeddings[ weight=10, penwidth=2, color="#BFBFBF"]
+    Qiu2015ConvolutionalNeuralTensor -> Santos2016ImprovedRepresentationLearning[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013NoTitleAvailable -> Le2014DistributedRepresentationsOf[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Santos2014DeepConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Collobert2011NaturalLanguageProcessing -> Kim2016ExploringConvolutionalAnd[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Gui2017LearningRepresentationsFrom[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hu2015ConvolutionalNeuralNetwork -> Zhao2015SelfadaptiveHierarchicalSentence[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kim2014ConvolutionalNeuralNetworks -> Zhao2015SelfadaptiveHierarchicalSentence[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOF -> Gui2017LearningRepresentationsFrom[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Socher2011DynamicPoolingAnd[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hu2014ConvolutionalNeuralNetwork -> Kenter2016SiameseCbowOptimizing[ weight=10, penwidth=2, color="#BFBFBF"]
+    Collobert2008AUnifiedArchitecture -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Mou2015DiscriminativeNeuralSentence[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOF -> Goldberg2016APrimerOn[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Hu2014ConvolutionalNeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kim2014ConvolutionalNeuralNetworks -> Tan2016ANeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
+    Zhao2015SelfadaptiveHierarchicalSentence -> Kiros2015SkipthoughtVectors[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kim2014ConvolutionalNeuralNetworks -> Hu2014ConvolutionalNeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
+    Yin2015AbcnnAttentionbasedConvolutional -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kim2014ConvolutionalNeuralNetworks -> Goldberg2016APrimerOn[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Yin2015AbcnnAttentionbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Irsoy2014DeepRecursiveNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2012SemanticCompositionalityThrough -> Kenter2016SiameseCbowOptimizing[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Wan2015ADeepArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
+    Collobert2011NaturalLanguageProcessing -> Hu2015ConvolutionalNeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
+    Collobert2011NaturalLanguageProcessing -> Le2014DistributedRepresentationsOf[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kiros2015SkipthoughtVectors -> Jernite2017DiscoursebasedObjectivesFor[ weight=10, penwidth=2, color="#BFBFBF"]
+    Le2014DistributedRepresentationsOf -> Kim2016ExploringConvolutionalAnd[ weight=10, penwidth=2, color="#BFBFBF"]
+    Yin2015MultigrancnnAnArchitecture -> Tan2016ANeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
     Socher2011SemisupervisedRecursiveAutoencoders -> Qian2015LearningTagEmbeddings[ weight=10, penwidth=2, color="#BFBFBF"]
     Mikolov2013DistributedRepresentationsOF -> Zhang2015LocalTranslationPrediction[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOF -> Irsoy2014DeepRecursiveNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kim2014ConvolutionalNeuralNetworks -> Tai2015ImprovedSemanticRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kim2014ConvolutionalNeuralNetworks -> Hu2014ConvolutionalNeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOF -> Kim2016ExploringConvolutionalAnd[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Irsoy2014DeepRecursiveNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Collobert2011NaturalLanguageProcessing -> Boom2015LearningSemanticSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOF -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hu2014ConvolutionalNeuralNetwork -> Boom2015LearningSemanticSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013EfficientEstimationOf -> He2015MultiperspectiveSentenceSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Tan2016ANeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Tai2015ImprovedSemanticRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
-    Collobert2011NaturalLanguageProcessing -> Santos2014DeepConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013EfficientEstimationOf -> Hu2015ConvolutionalNeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOfwords -> Wan2015ADeepArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
-    Gan2016UnsupervisedLearningOf -> Jernite2017DiscoursebasedObjectivesFor[ weight=10, penwidth=2, color="#BFBFBF"]
-    Chung2014EmpiricalEvaluationOf -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
-    Le2014DistributedRepresentationsOf -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
-    Santos2014DeepConvolutionalNeural -> Goldberg2016APrimerOn[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013EfficientEstimationOf -> Santos2014DeepConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Qiu2015ConvolutionalNeuralTensor -> Wan2015ADeepArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kim2014ConvolutionalNeuralNetworks -> He2015MultiperspectiveSentenceSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOF -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Yin2015MultigrancnnAnArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kim2014ConvolutionalNeuralNetworks -> Ma2015DependencybasedConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOfwords -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hu2014ConvolutionalNeuralNetwork -> Kenter2016SiameseCbowOptimizing[ weight=10, penwidth=2, color="#BFBFBF"]
-    Cheng2016LongShortTermMemorynetworks -> Wang2017BilateralMultiperspectiveMatching[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOF -> Zhao2015SelfadaptiveHierarchicalSentence[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Wan2015ADeepArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Zhao2015SelfadaptiveHierarchicalSentence[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013EfficientEstimationOf -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2012SemanticCompositionalityThrough -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
     Kim2014ConvolutionalNeuralNetworks -> Qian2015LearningTagEmbeddings[ weight=10, penwidth=2, color="#BFBFBF"]
-    Le2014DistributedRepresentationsOf -> Gui2017LearningRepresentationsFrom[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mitchell2010CompositionInDistributional -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
-    Collobert2008AUnifiedArchitecture -> Kenter2016SiameseCbowOptimizing[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kim2014ConvolutionalNeuralNetworks -> Kim2016ExploringConvolutionalAnd [ weight=4, penwidth=3, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOF -> Yin2015MultigrancnnAnArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Socher2011DynamicPoolingAnd[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOF -> Tai2015ImprovedSemanticRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
-    Logeswaran2016SentenceOrderingUsing -> Jernite2017DiscoursebasedObjectivesFor[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011DynamicPoolingAnd -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011DynamicPoolingAnd -> He2015MultiperspectiveSentenceSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
-    Yin2015AbcnnAttentionbasedConvolutional -> Wang2017BilateralMultiperspectiveMatching[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Socher2013RecursiveDeepModels[ weight=4, penwidth=3, color="#BFBFBF"]
-    Socher2011SemisupervisedRecursiveAutoencoders -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
-    Yin2015AbcnnAttentionbasedConvolutional -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kiros2015SkipthoughtVectors -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kalchbrenner2014AConvolutionalNeural -> Santos2016ImprovedRepresentationLearning[ weight=10, penwidth=2, color="#BFBFBF"]
-    Collobert2008AUnifiedArchitecture -> He2015MultiperspectiveSentenceSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
-    Mikolov2013DistributedRepresentationsOfwords -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hu2015ConvolutionalNeuralNetwork -> He2015MultiperspectiveSentenceSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hu2014ConvolutionalNeuralNetwork -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2013RecursiveDeepModels -> Tai2015ImprovedSemanticRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kim2014ConvolutionalNeuralNetworks -> Gui2017LearningRepresentationsFrom[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Er2016AttentionPoolingbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kiros2015SkipthoughtVectors -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013EfficientEstimationOf -> He2015MultiperspectiveSentenceSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Irsoy2014DeepRecursiveNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Palangi2016DeepSentenceEmbedding -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Qiu2015ConvolutionalNeuralTensor[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Kalchbrenner2014AConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Le2014DistributedRepresentationsOf -> Zhang2015LocalTranslationPrediction[ weight=10, penwidth=2, color="#BFBFBF"]
+    Ma2015DependencybasedConvolutionalNeural -> Goldberg2016APrimerOn[ weight=10, penwidth=2, color="#BFBFBF"]
     Kiros2015SkipthoughtVectors -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
-    Kim2014ConvolutionalNeuralNetworks -> Kim2016ExploringConvolutionalAnd[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hu2015ConvolutionalNeuralNetwork -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011DynamicPoolingAnd -> Wan2015ADeepArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
     Socher2011DynamicPoolingAnd -> Kiros2015SkipthoughtVectors[ weight=10, penwidth=2, color="#BFBFBF"]
     Hill2016LearningDistributedRepresentations -> Kenter2016SiameseCbowOptimizing[ weight=10, penwidth=2, color="#BFBFBF"]
-    Hu2015ConvolutionalNeuralNetwork -> Zhao2017TopicawareDeepCompositional[ weight=10, penwidth=2, color="#BFBFBF"]
-    Socher2012SemanticCompositionalityThrough -> Kenter2016SiameseCbowOptimizing[ weight=10, penwidth=2, color="#BFBFBF"]
-        Mikolov2013DistributedRepresentationsOfwords [color="#BFBFBF",
+    Collobert2008AUnifiedArchitecture -> He2015MultiperspectiveSentenceSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Mou2015DiscriminativeNeuralSentence[ weight=10, penwidth=2, color="#BFBFBF"]
+    Pang2005SeeingStarsExploiting -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hu2015ConvolutionalNeuralNetwork -> Mou2015DiscriminativeNeuralSentence[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013EfficientEstimationOf -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2012SemanticCompositionalityThrough -> Mikolov2013DistributedRepresentationsOF[ weight=10, penwidth=2, color="#BFBFBF"]
+    Le2014DistributedRepresentationsOf -> Boom2015LearningSemanticSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
+    Le2014DistributedRepresentationsOf -> Er2016AttentionPoolingbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOF -> Mou2015DiscriminativeNeuralSentence[ weight=10, penwidth=2, color="#BFBFBF"]
+    Le2014DistributedRepresentationsOf -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Kim2014ConvolutionalNeuralNetworks[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Zhao2015SelfadaptiveHierarchicalSentence[ weight=10, penwidth=2, color="#BFBFBF"]
+    Palangi2016DeepSentenceEmbedding -> Zhao2017TopicawareDeepCompositional[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Ma2015DependencybasedConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Tai2015ImprovedSemanticRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Er2016AttentionPoolingbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mitchell2010CompositionInDistributional -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
+    Le2014DistributedRepresentationsOf -> Ma2015DependencybasedConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Hu2015ConvolutionalNeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
+    Pang2005SeeingStarsExploiting -> Socher2013RecursiveDeepModels[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013EfficientEstimationOf -> Mikolov2013DistributedRepresentationsOF[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kiros2015SkipthoughtVectors -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Kim2014ConvolutionalNeuralNetworks[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOF -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2012SemanticCompositionalityThrough -> Kim2014ConvolutionalNeuralNetworks[ weight=10, penwidth=2, color="#BFBFBF"]
+    Le2014DistributedRepresentationsOf -> Tai2015ImprovedSemanticRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Socher2013RecursiveDeepModels[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hu2015ConvolutionalNeuralNetwork -> Tan2016ANeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
+    Collobert2008AUnifiedArchitecture -> Socher2011SemisupervisedRecursiveAutoencoders[ weight=10, penwidth=2, color="#BFBFBF"]
+    Collobert2011NaturalLanguageProcessing -> Santos2014DeepConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hu2014ConvolutionalNeuralNetwork -> Yin2015MultigrancnnAnArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
+    Collobert2008AUnifiedArchitecture -> Socher2013RecursiveDeepModels[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013NoTitleAvailable -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kim2014ConvolutionalNeuralNetworks -> He2015MultiperspectiveSentenceSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
+    Liu2016LanguageInferenceUsing -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
+    Tai2015ImprovedSemanticRepresentations -> Kiros2015SkipthoughtVectors[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Qian2015LearningTagEmbeddings[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOF -> Yin2015MultigrancnnAnArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
+    Le2014DistributedRepresentationsOf -> Irsoy2014DeepRecursiveNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Le2014DistributedRepresentationsOf -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Gan2016UnsupervisedLearningOf[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOF -> Tan2016ANeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Zhang2015LocalTranslationPrediction[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Tan2016ANeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hu2015ConvolutionalNeuralNetwork -> Gui2017LearningRepresentationsFrom[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hu2015ConvolutionalNeuralNetwork -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
+    Yin2015AbcnnAttentionbasedConvolutional -> Wang2016SentenceSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOfwords -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Santos2016ImprovedRepresentationLearning[ weight=10, penwidth=2, color="#BFBFBF"]
+    Cheng2016LongShortTermMemorynetworks -> Wang2017BilateralMultiperspectiveMatching[ weight=10, penwidth=2, color="#BFBFBF"]
+    Tai2015ImprovedSemanticRepresentations -> He2015MultiperspectiveSentenceSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Kalchbrenner2014AConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013NoTitleAvailable -> Kiros2015SkipthoughtVectors[ weight=10, penwidth=2, color="#BFBFBF"]
+    Yin2015AbcnnAttentionbasedConvolutional -> Wang2017BilateralMultiperspectiveMatching[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOfwords -> Kim2014ConvolutionalNeuralNetworks[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Gan2016UnsupervisedLearningOf[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Zhao2017TopicawareDeepCompositional[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hu2015ConvolutionalNeuralNetwork -> He2015MultiperspectiveSentenceSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hu2014ConvolutionalNeuralNetwork -> Palangi2016DeepSentenceEmbedding[ weight=10, penwidth=2, color="#BFBFBF"]
+    Logeswaran2016SentenceOrderingUsing -> Jernite2017DiscoursebasedObjectivesFor[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hu2014ConvolutionalNeuralNetwork -> He2015MultiperspectiveSentenceSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Hu2015ConvolutionalNeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Zhao2017TopicawareDeepCompositional[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013EfficientEstimationOf -> Santos2014DeepConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kim2014ConvolutionalNeuralNetworks -> Hu2015ConvolutionalNeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Qian2015LearningTagEmbeddings[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013NoTitleAvailable -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
+    Hu2014ConvolutionalNeuralNetwork -> Boom2015LearningSemanticSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
+    Collobert2008AUnifiedArchitecture -> Yin2015MultigrancnnAnArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
+    Wan2015ADeepArchitecture -> Yin2015AbcnnAttentionbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Le2014DistributedRepresentationsOf[ weight=10, penwidth=2, color="#BFBFBF"]
+    Chung2014EmpiricalEvaluationOf -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013EfficientEstimationOf -> Kiros2015SkipthoughtVectors[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Gui2017LearningRepresentationsFrom[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Zhao2017TopicawareDeepCompositional[ weight=10, penwidth=2, color="#BFBFBF"]
+    Irsoy2014DeepRecursiveNeural -> Ma2015DependencybasedConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kim2014ConvolutionalNeuralNetworks -> Kiros2015SkipthoughtVectors[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kiros2015SkipthoughtVectors -> Tan2016ANeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013NoTitleAvailable -> Kenter2016SiameseCbowOptimizing[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kim2014ConvolutionalNeuralNetworks -> Tai2015ImprovedSemanticRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOfwords -> Kim2016ExploringConvolutionalAnd[ weight=10, penwidth=2, color="#BFBFBF"]
+    Pang2005SeeingStarsExploiting -> Hill2016LearningDistributedRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Zhao2015SelfadaptiveHierarchicalSentence[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011DynamicPoolingAnd -> Fu2017CombineHownetLexison[ weight=10, penwidth=2, color="#BFBFBF"]
+    Pang2005SeeingStarsExploiting -> Le2014DistributedRepresentationsOf[ weight=10, penwidth=2, color="#BFBFBF"]
+    Collobert2011NaturalLanguageProcessing -> Boom2015LearningSemanticSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOF -> Kim2016ExploringConvolutionalAnd[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Er2016AttentionPoolingbasedConvolutional[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kim2014ConvolutionalNeuralNetworks -> Ma2015DependencybasedConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Cheng2016LongShortTermMemorynetworks -> Lin2017AStructuredSelfattentive[ weight=10, penwidth=2, color="#BFBFBF"]
+    Collobert2008AUnifiedArchitecture -> Mikolov2013DistributedRepresentationsOF[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Kim2014ConvolutionalNeuralNetworks[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOfwords -> Wan2015ADeepArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Goldberg2016APrimerOn[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOF -> Kim2014ConvolutionalNeuralNetworks[ weight=10, penwidth=2, color="#BFBFBF"]
+    Ramachandran2016UnsupervisedPretrainingFor -> Jernite2017DiscoursebasedObjectivesFor[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOF -> Le2014DistributedRepresentationsOf[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Tai2015ImprovedSemanticRepresentations[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2013RecursiveDeepModels -> Ma2015DependencybasedConvolutionalNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013EfficientEstimationOf -> Hu2015ConvolutionalNeuralNetwork[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011SemisupervisedRecursiveAutoencoders -> Socher2013RecursiveDeepModels[ weight=4, penwidth=3, color="#BFBFBF"]
+    Kim2014ConvolutionalNeuralNetworks -> Zhang2015LocalTranslationPrediction[ weight=10, penwidth=2, color="#BFBFBF"]
+    Collobert2008AUnifiedArchitecture -> Le2014DistributedRepresentationsOf[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Kiros2015SkipthoughtVectors[ weight=10, penwidth=2, color="#BFBFBF"]
+    Kalchbrenner2014AConvolutionalNeural -> Mou2015DiscriminativeNeuralSentence[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOF -> Qiu2015ConvolutionalNeuralTensor[ weight=10, penwidth=2, color="#BFBFBF"]
+    Socher2011DynamicPoolingAnd -> Yin2015MultigrancnnAnArchitecture[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013EfficientEstimationOf -> Boom2015LearningSemanticSimilarity[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOF -> Irsoy2014DeepRecursiveNeural[ weight=10, penwidth=2, color="#BFBFBF"]
+    Mikolov2013DistributedRepresentationsOfwords -> Santos2016ImprovedRepresentationLearning[ weight=10, penwidth=2, color="#BFBFBF"]
+        Zhang2015LocalTranslationPrediction [color="#BFBFBF",
             shape=record,
             margin=0,
             label=<
                 <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="60" COLOR="#FFFFFF">Mikolov2013</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Kiros2015SkipthoughtVectors [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="25.5" COLOR="#FFFFFF">Kiros2015</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Lin2017AStructuredSelfattentive [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#70cbe9"><FONT  POINT-SIZE="12.2" COLOR="#FFFFFF">Lin2017</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Ma2015DependencybasedConvolutionalNeural [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#50c3e9"><FONT  POINT-SIZE="14.0" COLOR="#FFFFFF">Ma2015</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Kim2016ExploringConvolutionalAnd [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#73cce9"><FONT  POINT-SIZE="12.05" COLOR="#FFFFFF">Kim2016</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        He2015MultiperspectiveSentenceSimilarity [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#4dc2e9"><FONT  POINT-SIZE="14.15" COLOR="#FFFFFF">He2015</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Lee2016SequentialShorttextClassification [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#63c8e9"><FONT  POINT-SIZE="12.95" COLOR="#FFFFFF">Lee2016</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Cheng2016LongShortTermMemorynetworks [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#46c1e9"><FONT  POINT-SIZE="14.55" COLOR="#FFFFFF">Cheng2016</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Santos2016ImprovedRepresentationLearning [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#6fcbe9"><FONT  POINT-SIZE="12.25" COLOR="#FFFFFF">Santos2016</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Palangi2016DeepSentenceEmbedding [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#33bce9"><FONT  POINT-SIZE="15.55" COLOR="#FFFFFF">Palangi2016</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Gui2017LearningRepresentationsFrom [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#74cce9"><FONT  POINT-SIZE="12.0" COLOR="#FFFFFF">Gui2017</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Logeswaran2016SentenceOrderingUsing [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#73cce9"><FONT  POINT-SIZE="12.05" COLOR="#FFFFFF">Logeswaran2016</FONT></TD></TR>
+                    <TR><TD COLSPAN="2" BGCOLOR="#70cbe9"><FONT  POINT-SIZE="12.2" COLOR="#FFFFFF">Zhang2015</FONT></TD></TR>
  
                 </TABLE>>
                 ];
@@ -374,93 +276,12 @@ digraph G {
  
                 </TABLE>>
                 ];
-        Socher2011DynamicPoolingAnd [color="#BFBFBF",
+        Le2014DistributedRepresentationsOf [color="#BFBFBF",
             shape=record,
             margin=0,
             label=<
                 <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="23.15" COLOR="#FFFFFF">Socher2011</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Socher2012SemanticCompositionalityThrough [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="25.3" COLOR="#FFFFFF">Socher2012</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Qian2015LearningTagEmbeddings [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#72cce9"><FONT  POINT-SIZE="12.1" COLOR="#FFFFFF">Qian2015</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Wan2015ADeepArchitecture [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#64c8e9"><FONT  POINT-SIZE="12.9" COLOR="#FFFFFF">Wan2015</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Socher2013RecursiveDeepModels [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="60" COLOR="#FFFFFF">Socher2013</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Wang2017BilateralMultiperspectiveMatching [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#67c9e9"><FONT  POINT-SIZE="12.7" COLOR="#FFFFFF">Wang2017</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Gan2016UnsupervisedLearningOf [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#72cce9"><FONT  POINT-SIZE="12.1" COLOR="#FFFFFF">Gan2016</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Parikh2016ADecomposableAttention [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#5bc6e9"><FONT  POINT-SIZE="13.35" COLOR="#FFFFFF">Parikh2016</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Fu2017CombineHownetLexison [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#74cce9"><FONT  POINT-SIZE="12.0" COLOR="#FFFFFF">Fu2017</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Ramachandran2016UnsupervisedPretrainingFor [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#70cbe9"><FONT  POINT-SIZE="12.2" COLOR="#FFFFFF">Ramachandran2016</FONT></TD></TR>
+                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="60" COLOR="#FFFFFF">Le2014</FONT></TD></TR>
  
                 </TABLE>>
                 ];
@@ -473,6 +294,15 @@ digraph G {
  
                 </TABLE>>
                 ];
+        Tai2015ImprovedSemanticRepresentations [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#3ebfe9"><FONT  POINT-SIZE="14.95" COLOR="#FFFFFF">Tai2015</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
         Kim2014ConvolutionalNeuralNetworks [color="#BFBFBF",
             shape=record,
             margin=0,
@@ -482,111 +312,12 @@ digraph G {
  
                 </TABLE>>
                 ];
-        Qiu2015ConvolutionalNeuralTensor [color="#BFBFBF",
+        Mou2015DiscriminativeNeuralSentence [color="#BFBFBF",
             shape=record,
             margin=0,
             label=<
                 <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#73cce9"><FONT  POINT-SIZE="12.05" COLOR="#FFFFFF">Qiu2015</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Kalchbrenner2014AConvolutionalNeural [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="42.45" COLOR="#FFFFFF">Kalchbrenner2014</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Zhao2015SelfadaptiveHierarchicalSentence [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#6ccae9"><FONT  POINT-SIZE="12.45" COLOR="#FFFFFF">Zhao2015</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Jernite2017DiscoursebasedObjectivesFor [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#74cce9"><FONT  POINT-SIZE="12.0" COLOR="#FFFFFF">Jernite2017</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Mikolov2013NoTitleAvailable [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#1eb7e9"><FONT  POINT-SIZE="16.7" COLOR="#FFFFFF">Mikolov2013</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Wang2016SentenceSimilarity [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#65c8e9"><FONT  POINT-SIZE="12.85" COLOR="#FFFFFF">Wang2016</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Zhao2017TopicawareDeepCompositional [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#73cce9"><FONT  POINT-SIZE="12.05" COLOR="#FFFFFF">Zhao2017</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Zhang2015LocalTranslationPrediction [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#70cbe9"><FONT  POINT-SIZE="12.2" COLOR="#FFFFFF">Zhang2015</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Er2016AttentionPoolingbasedConvolutional [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#74cce9"><FONT  POINT-SIZE="12.0" COLOR="#FFFFFF">Er2016</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Kenter2016SiameseCbowOptimizing [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#69c9e9"><FONT  POINT-SIZE="12.6" COLOR="#FFFFFF">Kenter2016</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Hu2015ConvolutionalNeuralNetwork [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="20.5" COLOR="#FFFFFF">Hu2015</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Le2014DistributedRepresentationsOf [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="60" COLOR="#FFFFFF">Le2014</FONT></TD></TR>
+                    <TR><TD COLSPAN="2" BGCOLOR="#68c9e9"><FONT  POINT-SIZE="12.65" COLOR="#FFFFFF">Mou2015</FONT></TD></TR>
  
                 </TABLE>>
                 ];
@@ -608,30 +339,12 @@ digraph G {
  
                 </TABLE>>
                 ];
-        Mikolov2013DistributedRepresentationsOF [color="#BFBFBF",
+        Collobert2008AUnifiedArchitecture [color="#BFBFBF",
             shape=record,
             margin=0,
             label=<
                 <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="60" COLOR="#FFFFFF">Mikolov2013</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Mikolov2013EfficientEstimationOf [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="21.5" COLOR="#FFFFFF">Mikolov2013</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Liu2016LanguageInferenceUsing [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#68c9e9"><FONT  POINT-SIZE="12.65" COLOR="#FFFFFF">Liu2016</FONT></TD></TR>
+                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="51.15" COLOR="#FFFFFF">Collobert2008</FONT></TD></TR>
  
                 </TABLE>>
                 ];
@@ -644,93 +357,21 @@ digraph G {
  
                 </TABLE>>
                 ];
-        Yin2015MultigrancnnAnArchitecture [color="#BFBFBF",
+        Logeswaran2016SentenceOrderingUsing [color="#BFBFBF",
             shape=record,
             margin=0,
             label=<
                 <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#74cce9"><FONT  POINT-SIZE="12.0" COLOR="#FFFFFF">Yin2015</FONT></TD></TR>
+                    <TR><TD COLSPAN="2" BGCOLOR="#73cce9"><FONT  POINT-SIZE="12.05" COLOR="#FFFFFF">Logeswaran2016</FONT></TD></TR>
  
                 </TABLE>>
                 ];
-        Boom2015LearningSemanticSimilarity [color="#BFBFBF",
+        Mikolov2013DistributedRepresentationsOfwords [color="#BFBFBF",
             shape=record,
             margin=0,
             label=<
                 <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#6fcbe9"><FONT  POINT-SIZE="12.25" COLOR="#FFFFFF">Boom2015</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Mou2015DiscriminativeNeuralSentence [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#68c9e9"><FONT  POINT-SIZE="12.65" COLOR="#FFFFFF">Mou2015</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Irsoy2014DeepRecursiveNeural [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#54c4e9"><FONT  POINT-SIZE="13.75" COLOR="#FFFFFF">Irsoy2014</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Chung2014EmpiricalEvaluationOf [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="34.4" COLOR="#FFFFFF">Chung2014</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Collobert2008AUnifiedArchitecture [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="51.15" COLOR="#FFFFFF">Collobert2008</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Santos2014DeepConvolutionalNeural [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="21.05" COLOR="#FFFFFF">Santos2014</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Goldberg2016APrimerOn [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#72cce9"><FONT  POINT-SIZE="12.1" COLOR="#FFFFFF">Goldberg2016</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Hu2014ConvolutionalNeuralNetwork [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#1fb7e9"><FONT  POINT-SIZE="16.65" COLOR="#FFFFFF">Hu2014</FONT></TD></TR>
- 
-                </TABLE>>
-                ];
-        Mitchell2010CompositionInDistributional [color="#BFBFBF",
-            shape=record,
-            margin=0,
-            label=<
-                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="36.45" COLOR="#FFFFFF">Mitchell2010</FONT></TD></TR>
+                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="60" COLOR="#FFFFFF">Mikolov2013</FONT></TD></TR>
  
                 </TABLE>>
                 ];
@@ -743,12 +384,192 @@ digraph G {
  
                 </TABLE>>
                 ];
-        Tai2015ImprovedSemanticRepresentations [color="#BFBFBF",
+        Yin2015MultigrancnnAnArchitecture [color="#BFBFBF",
             shape=record,
             margin=0,
             label=<
                 <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
-                    <TR><TD COLSPAN="2" BGCOLOR="#3ebfe9"><FONT  POINT-SIZE="14.95" COLOR="#FFFFFF">Tai2015</FONT></TD></TR>
+                    <TR><TD COLSPAN="2" BGCOLOR="#74cce9"><FONT  POINT-SIZE="12.0" COLOR="#FFFFFF">Yin2015</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Lin2017AStructuredSelfattentive [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#70cbe9"><FONT  POINT-SIZE="12.2" COLOR="#FFFFFF">Lin2017</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Gui2017LearningRepresentationsFrom [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#74cce9"><FONT  POINT-SIZE="12.0" COLOR="#FFFFFF">Gui2017</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Qiu2015ConvolutionalNeuralTensor [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#73cce9"><FONT  POINT-SIZE="12.05" COLOR="#FFFFFF">Qiu2015</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Kenter2016SiameseCbowOptimizing [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#69c9e9"><FONT  POINT-SIZE="12.6" COLOR="#FFFFFF">Kenter2016</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        He2015MultiperspectiveSentenceSimilarity [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#4dc2e9"><FONT  POINT-SIZE="14.15" COLOR="#FFFFFF">He2015</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Parikh2016ADecomposableAttention [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#5bc6e9"><FONT  POINT-SIZE="13.35" COLOR="#FFFFFF">Parikh2016</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Qian2015LearningTagEmbeddings [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#72cce9"><FONT  POINT-SIZE="12.1" COLOR="#FFFFFF">Qian2015</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Fu2017CombineHownetLexison [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#74cce9"><FONT  POINT-SIZE="12.0" COLOR="#FFFFFF">Fu2017</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Mikolov2013EfficientEstimationOf [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="21.5" COLOR="#FFFFFF">Mikolov2013</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Lee2016SequentialShorttextClassification [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#63c8e9"><FONT  POINT-SIZE="12.95" COLOR="#FFFFFF">Lee2016</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Jernite2017DiscoursebasedObjectivesFor [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#74cce9"><FONT  POINT-SIZE="12.0" COLOR="#FFFFFF">Jernite2017</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Palangi2016DeepSentenceEmbedding [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#33bce9"><FONT  POINT-SIZE="15.55" COLOR="#FFFFFF">Palangi2016</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Cheng2016LongShortTermMemorynetworks [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#46c1e9"><FONT  POINT-SIZE="14.55" COLOR="#FFFFFF">Cheng2016</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Socher2011DynamicPoolingAnd [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="23.15" COLOR="#FFFFFF">Socher2011</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Socher2013RecursiveDeepModels [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="60" COLOR="#FFFFFF">Socher2013</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Er2016AttentionPoolingbasedConvolutional [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#74cce9"><FONT  POINT-SIZE="12.0" COLOR="#FFFFFF">Er2016</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Mitchell2010CompositionInDistributional [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="36.45" COLOR="#FFFFFF">Mitchell2010</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Boom2015LearningSemanticSimilarity [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#6fcbe9"><FONT  POINT-SIZE="12.25" COLOR="#FFFFFF">Boom2015</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Wang2016SentenceSimilarity [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#65c8e9"><FONT  POINT-SIZE="12.85" COLOR="#FFFFFF">Wang2016</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Wang2017BilateralMultiperspectiveMatching [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#67c9e9"><FONT  POINT-SIZE="12.7" COLOR="#FFFFFF">Wang2017</FONT></TD></TR>
  
                 </TABLE>>
                 ];
@@ -758,6 +579,186 @@ digraph G {
             label=<
                 <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
                     <TR><TD COLSPAN="2" BGCOLOR="#74cce9"><FONT  POINT-SIZE="12.0" COLOR="#FFFFFF">Tan2016</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Hu2014ConvolutionalNeuralNetwork [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#1fb7e9"><FONT  POINT-SIZE="16.65" COLOR="#FFFFFF">Hu2014</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Hu2015ConvolutionalNeuralNetwork [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="20.5" COLOR="#FFFFFF">Hu2015</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Mikolov2013NoTitleAvailable [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#1eb7e9"><FONT  POINT-SIZE="16.7" COLOR="#FFFFFF">Mikolov2013</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Santos2016ImprovedRepresentationLearning [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#6fcbe9"><FONT  POINT-SIZE="12.25" COLOR="#FFFFFF">Santos2016</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Zhao2017TopicawareDeepCompositional [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#73cce9"><FONT  POINT-SIZE="12.05" COLOR="#FFFFFF">Zhao2017</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Goldberg2016APrimerOn [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#72cce9"><FONT  POINT-SIZE="12.1" COLOR="#FFFFFF">Goldberg2016</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Gan2016UnsupervisedLearningOf [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#72cce9"><FONT  POINT-SIZE="12.1" COLOR="#FFFFFF">Gan2016</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Chung2014EmpiricalEvaluationOf [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="34.4" COLOR="#FFFFFF">Chung2014</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Ramachandran2016UnsupervisedPretrainingFor [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#70cbe9"><FONT  POINT-SIZE="12.2" COLOR="#FFFFFF">Ramachandran2016</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Irsoy2014DeepRecursiveNeural [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#54c4e9"><FONT  POINT-SIZE="13.75" COLOR="#FFFFFF">Irsoy2014</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Santos2014DeepConvolutionalNeural [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="21.05" COLOR="#FFFFFF">Santos2014</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Socher2012SemanticCompositionalityThrough [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="25.3" COLOR="#FFFFFF">Socher2012</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Liu2016LanguageInferenceUsing [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#68c9e9"><FONT  POINT-SIZE="12.65" COLOR="#FFFFFF">Liu2016</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Kiros2015SkipthoughtVectors [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="25.5" COLOR="#FFFFFF">Kiros2015</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Kim2016ExploringConvolutionalAnd [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#73cce9"><FONT  POINT-SIZE="12.05" COLOR="#FFFFFF">Kim2016</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Ma2015DependencybasedConvolutionalNeural [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#50c3e9"><FONT  POINT-SIZE="14.0" COLOR="#FFFFFF">Ma2015</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Kalchbrenner2014AConvolutionalNeural [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="42.45" COLOR="#FFFFFF">Kalchbrenner2014</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Zhao2015SelfadaptiveHierarchicalSentence [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#6ccae9"><FONT  POINT-SIZE="12.45" COLOR="#FFFFFF">Zhao2015</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Wan2015ADeepArchitecture [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#64c8e9"><FONT  POINT-SIZE="12.9" COLOR="#FFFFFF">Wan2015</FONT></TD></TR>
+ 
+                </TABLE>>
+                ];
+        Mikolov2013DistributedRepresentationsOF [color="#BFBFBF",
+            shape=record,
+            margin=0,
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" >
+                    <TR><TD COLSPAN="2" BGCOLOR="#00b0e9"><FONT  POINT-SIZE="60" COLOR="#FFFFFF">Mikolov2013</FONT></TD></TR>
  
                 </TABLE>>
                 ];
