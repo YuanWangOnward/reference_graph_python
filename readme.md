@@ -1,24 +1,28 @@
 # Introduction
 <div style="text-align: justify; text-indent: 30px;">
 <p>
-Researcher do a lot of literature survey, which is always a pain,
-pain, in the sense that it is hard to get the 'big picture' of a field
-facing the endless and messy papers. I'm trying to develop an auto tool to
-alleviate the problem. The tool has two main functions:
-<ul>
-    <li >
-        Given a set of papers, visualize their relationship as a graph.
-        Graph nodes are papers and they should be arranged chronologically.
-        Graph edges indicate citation relationship.
-        Highlights of each paper should be attached to the nodes.
-        Nodes should be visualized in the way to make it very easy to see the
-        most impactful ones.
-    </li>
-    <li >
-        Given a set of papers, the tool should be able to find the most related
-        papers in terms of citation relationship. Namely, expand your pool.
-    </li>
-</ul>
+    Researcher do a lot of literature survey, which is always a pain,
+    pain, in the sense that it is hard to get the 'big picture' of a field
+    facing the endless and messy papers. There should be auto tools allowing people
+    to find out the most influential works and
+    see how the studies of a field evolves along time.
+    However I cannot find myself a satisfactory one and I decided to make one myself.
+    The main functionality of this tool includes:
+    <ul>
+        <li >
+            Given a set of papers, visualize their relationship as a graph.
+            Graph nodes are papers and they are arranged chronologically.
+            Graph edges indicate citation relationship.
+        </li>
+        <li >
+            Features of each paper can be attached to the nodes.
+            Influential papers are highlighted.
+        </li>
+        <li >
+            Given a set of papers, the tool is able to find the most related
+            papers in terms of citation relationship. Namely, expand your paper pool.
+        </li>
+    </ul>
 </p>
 </div>
 
