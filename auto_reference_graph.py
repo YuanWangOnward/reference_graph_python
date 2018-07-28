@@ -281,7 +281,10 @@ class AutoReferenceGraph:
 
             # add nodes
             for idx in df.index:
-                f.write(self.add_a_node(self.template, df.columns, df.loc[idx]))
+                try:
+                    f.write(self.add_a_node(self.template, df.columns, df.loc[idx]))
+                except:
+                    print(idx + " cannot be added")
             f.write('}\n')
 
     def create_graph(self, gv_path, output_path, output_type):
@@ -304,6 +307,7 @@ class AutoReferenceGraph:
     def prepare_df(self, df):
         """
         Add basic info (columns) to DataFrame, including ID, Title, Label, Note
+        Also add type convert.
         :param df:
         :return:
         """
@@ -324,6 +328,8 @@ class AutoReferenceGraph:
         df = df.rename(columns=self.key_replacement)
         df['Citation'] = [0 if np.isnan(i) else i for i in df['Citation']]
         # print('# reference without citation: ' + str(sum([np.isnan(i) for i in df['Citation']]))
+        if 'Year' in df.columns:
+            pd.to_numeric(df['Year'], downcast='integer')
         return df
 
     def remove_duplicated_relation(self, relation):
@@ -460,6 +466,10 @@ class AutoReferenceGraph:
         # combine information
         df = df.append(df_relation)
         df = df.drop_duplicates(subset='ID')
+
+        # data type
+        if 'Year' in df.columns:
+            df['Year'] = pd.to_numeric(df['Year'], downcast='integer')
 
         return [df, relations]
 

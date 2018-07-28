@@ -56,7 +56,7 @@ arg.create_gv_file(GV_PATH, df, relation)
 
 
 # draw the reference graph
-outpout_type = 'pdf'
+outpout_type = 'png'
 arg.create_graph(GV_PATH, '.'.join([GRAPH_OUTPUT_PATH, outpout_type]), outpout_type)
 
 
